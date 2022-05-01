@@ -14,7 +14,7 @@ public class Entity implements Render {
     protected Sprite sprite;
 
     @Override
-    public void uppdate();
+    public void update();
 
 
     @Override

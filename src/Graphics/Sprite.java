@@ -122,16 +122,16 @@ public class Sprite {
      * Character
      * |--------------------------------------------------------------------------
      */
-    // BALLOM
-    public static Sprite balloom_left1 = new Sprite(16, 9, 0, SpriteSheet.tiles, 16, 16);
-    public static Sprite balloom_left2 = new Sprite(16, 9, 1, SpriteSheet.tiles, 16, 16);
-    public static Sprite balloom_left3 = new Sprite(16, 9, 2, SpriteSheet.tiles, 16, 16);
+    // BALLOON
+    public static Sprite balloon_left1 = new Sprite(16, 9, 0, SpriteSheet.tiles, 16, 16);
+    public static Sprite balloon_left2 = new Sprite(16, 9, 1, SpriteSheet.tiles, 16, 16);
+    public static Sprite balloon_left3 = new Sprite(16, 9, 2, SpriteSheet.tiles, 16, 16);
 
-    public static Sprite balloom_right1 = new Sprite(16, 10, 0, SpriteSheet.tiles, 16, 16);
-    public static Sprite balloom_right2 = new Sprite(16, 10, 1, SpriteSheet.tiles, 16, 16);
-    public static Sprite balloom_right3 = new Sprite(16, 10, 2, SpriteSheet.tiles, 16, 16);
+    public static Sprite balloon_right1 = new Sprite(16, 10, 0, SpriteSheet.tiles, 16, 16);
+    public static Sprite balloon_right2 = new Sprite(16, 10, 1, SpriteSheet.tiles, 16, 16);
+    public static Sprite balloon_right3 = new Sprite(16, 10, 2, SpriteSheet.tiles, 16, 16);
 
-    public static Sprite balloom_dead = new Sprite(16, 9, 3, SpriteSheet.tiles, 16, 16);
+    public static Sprite balloon_dead = new Sprite(16, 9, 3, SpriteSheet.tiles, 16, 16);
 
     // ONEAL
     public static Sprite oneal_left1 = new Sprite(16, 11, 0, SpriteSheet.tiles, 16, 16);

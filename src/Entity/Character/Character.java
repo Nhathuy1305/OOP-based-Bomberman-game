@@ -20,17 +20,17 @@ public abstract class Character extends AnimatedEntity {
     public abstract void update();
 
     @Override
-    public abstract void render();
+    public abstract void render(Screen screen);
 
     protected abstract void calculateMove();
 
-    protected abstract void move();
+    protected abstract void move(double xa, double ya);
 
     protected abstract void afterKill();
     
     public abstract void kill();
 
-    protected abstract void canMove();
+    protected abstract boolean canMove(double x, double y);
 
     protected double getXMessage()
 	{

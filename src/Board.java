@@ -43,25 +43,7 @@ public class Board implements Render {
 	}
 
     @Override
-    public void update(){
-        if(game.isPause())
-            return;
-        updateEntities();
-        updateCharacters();
-        updateBombs();
-        updateMessages();
-        detectEndGame();
-
-        for (int i = 0; i < characters.size(); i++){
-            Character character_i = characters.get(i);
-            if (character_i.isRemoved())
-                characters.remove(i);
-        }
-    }
-
-    @Override
-	public void render(Screen screen)
-	{
+	public void render(Screen screen){
 		if (game.isPaused())
 			return;
 
@@ -385,4 +367,22 @@ public class Board implements Render {
 	public int getHeight(){
 		return level_loader.getHeight();
 	}
+
+	@Override
+    public void update(){
+        if(game.isPause())
+            return;
+        updateEntities();
+        updateCharacters();
+        updateBombs();
+        updateMessages();
+        detectEndGame();
+
+        for (int i = 0; i < characters.size(); i++){
+            Character character_i = characters.get(i);
+            if (character_i.isRemoved())
+                characters.remove(i);
+        }
+    }
+
 }

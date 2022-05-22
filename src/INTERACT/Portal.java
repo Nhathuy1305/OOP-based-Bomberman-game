@@ -3,7 +3,8 @@ package INTERACT;
 import Entity.Entity;
 import Graphics.Sprite;
 
-public class Portal extends Tile{
+
+public class Portal extends Tile {
     private Board board;
 
     public Portal(int x, int y, Sprite sprite, Board board) {
@@ -28,4 +29,5 @@ public class Portal extends Tile{
                 board.nextLevel();
         }
         return false;
+    }
 }

@@ -14,8 +14,9 @@ import java.util.List;
 import javax.swing.JPanel;
 
 import Graphics.Render;
-import kuusisto.tinysound.Sound;
-import kuusisto.tinysound.TinySound;
+import Input.Keyboard;
+//import kuusisto.tinysound.Sound;
+//import kuusisto.tinysound.TinySound;
 
 public class Board implements Render {
     protected LevelLoader level_loader;

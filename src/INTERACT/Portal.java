@@ -1,8 +1,10 @@
 package INTERACT;
 
+import Entity.Character.Bomber;
+import Entity.Character.Enemy.Enemy;
 import Entity.Entity;
 import Graphics.Sprite;
-
+import GameRunning.Board;
 
 public class Portal extends Tile {
     private Board board;

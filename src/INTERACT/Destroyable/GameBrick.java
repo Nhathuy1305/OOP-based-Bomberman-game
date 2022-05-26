@@ -1,2 +1,4 @@
-package INTERACT.Destroyable;public class GameBrick {
+package INTERACT.Destroyable;
+
+public class GameBrick {
 }

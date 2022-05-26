@@ -1,24 +1,13 @@
+package GameRunning;
+
 import Input.Keyboard;
 import Graphics.Screen;
 
 import java.awt.Canvas;
-import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.awt.image.BufferStrategy;
 import java.awt.image.DataBufferInt;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-
-import javax.swing.JButton;
-import javax.swing.JPanel;
 
 import kuusisto.tinysound.Music;
 import kuusisto.tinysound.Sound;

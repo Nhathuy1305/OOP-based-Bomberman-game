@@ -5,16 +5,13 @@ import Graphics.Screen;
 import Graphics.Sprite;
 
 public abstract class Tile extends Entity {
-    public Tile(int x, int y, Sprite sprite)
-    {
-        x = x;
-        y = y;
-        sprite = sprite;
+    public Tile(double x, double y, Sprite sprite) {
+        super(x, y, sprite);
     }
 
     /*
-     Mặc định không cho bất cứ một đối tượng nào đi qua
-     */
+             No things can pass through by default.
+             */
     @Override
     public boolean collide(Entity e)
     {
@@ -28,6 +25,5 @@ public abstract class Tile extends Entity {
     }
 
     @Override
-    public void update();
-
+    public void update(){};
 }

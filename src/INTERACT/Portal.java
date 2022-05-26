@@ -1,9 +1,12 @@
 package INTERACT;
 
+import Entity.Character.Bomber;
+import Entity.Character.Enemy.Enemy;
 import Entity.Entity;
 import Graphics.Sprite;
+import GameRunning.Board;
 
-public class Portal extends Tile{
+public class Portal extends Tile {
     private Board board;
 
     public Portal(int x, int y, Sprite sprite, Board board) {
@@ -28,4 +31,5 @@ public class Portal extends Tile{
                 board.nextLevel();
         }
         return false;
+    }
 }

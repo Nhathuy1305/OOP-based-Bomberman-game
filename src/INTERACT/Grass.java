@@ -9,7 +9,7 @@ public class Grass extends Tile{
     }
 
     /*
-     Cho bất kì đối tượng khác đi qua
+     Allow any other object pass
      */
     @Override
     public boolean collide(Entity e)

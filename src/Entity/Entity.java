@@ -1,5 +1,8 @@
 package Entity;
 
+import Entity.Character.Bomber;
+import Entity.Character.Enemy.Enemy;
+import GameRunning.Game;
 import Graphics.Render;
 import Graphics.Screen;
 import Graphics.Sprite;
@@ -13,14 +16,18 @@ public class Entity implements Render {
     protected boolean removed = false;
     protected Sprite sprite;
 
-    @Override
-    public void update();
-
-
-    @Override
-    public void render(Screen screen) {
-
+    public Entity(double x, double y, Sprite sprite) {
+        this.x = x;
+        this.y = y;
+        this.sprite = sprite;
     }
+
+    @Override
+    public void update(){};
+
+
+    @Override
+    public void render(Screen screen) {};
 
     public void setRemoved() {
         removed = true;
@@ -53,5 +60,11 @@ public class Entity implements Render {
         return y;
     }
 
-    //
+    public int getXTile() {
+        return Coordinates.pixelToTile(x + sprite.SIZE / 2);
+    }
+
+    public int getYTile() {
+        return Coordinates.pixelToTile(y - sprite.SIZE / 2);
+    }
 }

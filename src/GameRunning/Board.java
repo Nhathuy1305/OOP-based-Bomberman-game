@@ -1,21 +1,20 @@
+package GameRunning;
+
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.swing.JPanel;
-
+import Entity.Entity;
 import Graphics.Render;
-import kuusisto.tinysound.Sound;
-import kuusisto.tinysound.TinySound;
+import Graphics.Screen;
+import Input.Keyboard;
+//import kuusisto.tinysound.Sound;
+//import kuusisto.tinysound.TinySound;
 
 public class Board implements Render {
     protected LevelLoader level_loader;

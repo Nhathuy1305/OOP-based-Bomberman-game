@@ -10,6 +10,6 @@ public class Wall extends Tile{
 
     @Override
     public boolean collide(Entity e) {
-        return super.collide(e);    // Đang cân nhắc
+        return true;   
     }
 }

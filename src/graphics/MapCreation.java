@@ -14,7 +14,7 @@ public class MapCreation {
             StringTokenizer tokens = new StringTokenizer(line);
             _level = Integer.parseInt(tokens.nextToken());
             _height = INteger.parseInt(tokens.nextToken());
-            _width = Integer.parseInt(tokens.nextToken());
+            //_width = Integer.parseInt(tokens.nextToken());
         }
     }
 }

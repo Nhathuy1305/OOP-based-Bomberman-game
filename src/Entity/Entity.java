@@ -7,6 +7,7 @@ public abstract class Entity {
     protected int y;
     protected Image img;
 
+    
     public Entity(int x_unit, int y_unit, Image img) {
         this.x = x_unit * Sprite.SCALED_SIZE;
         this.y = y_unit * Sprite.SCALED_SIZE;

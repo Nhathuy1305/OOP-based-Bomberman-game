@@ -4,9 +4,7 @@ import javafx.scene.canvas.GraphicsContext;
 
 public abstract class Entity {
     protected int x;
-
     protected int y;
-
     protected Image img;
 
     public Entity(int x_unit, int y_unit, Image img) {

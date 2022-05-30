@@ -12,7 +12,7 @@ public class Bomber extends Animal {
     }
 
     public Bomber() {
-        
+
     }
 
     public Bomber(int x, int y, Image img) {
@@ -24,13 +24,16 @@ public class Bomber extends Animal {
             if (swap_kill == 1) {
                 animal.setImg(Sprite.player_dead1.getFxImage());
                 swap_kill = 2;
-            } else if (swap_kill == 2) {
+            } 
+            else if (swap_kill == 2) {
                 animal.setImg(Sprite.player_dead2.getFxImage());
                 swap_kill = 3;
-            } else if (swap_kill == 3) {
+            } 
+            else if (swap_kill == 3) {
                 animal.setImg(Sprite.player_dead3.getFxImage());
                 swap_kill = 4;
-            } else {
+            } 
+            else {
                 animal.setImg(Sprite.transparent.getFxImage());
                 running = false;
                 Image gameOver = new Image("images/gameOver.png");

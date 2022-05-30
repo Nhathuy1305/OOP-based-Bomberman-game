@@ -47,4 +47,9 @@ public class Sprite {
 
     public static Sprite control_left_1 = new Sprite(ORIGINAL_SIZE, 3, 1, 11, 16, SpriteSheet.tiles);
     public static Sprite control_left_2 = new Sprite(ORIGINAL_SIZE, 3, 2, 12, 16, SpriteSheet.tiles);
+
+    // Death
+    public static Sprite player_dead_1 = new Sprite(ORIGINAL_SIZE, 4, 2, 14, 16, SpriteSheet.tiles);
+    public static Sprite player_dead_2 = new Sprite(ORIGINAL_SIZE, 5, 2, 13, 15, SpriteSheet.tiles);
+    public static Sprite player_dead_3 = new Sprite(ORIGINAL_SIZE, 6, 2, 16, 16, SpriteSheet.tiles);
 }

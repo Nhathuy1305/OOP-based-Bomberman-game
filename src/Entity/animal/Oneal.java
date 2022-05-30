@@ -6,6 +6,7 @@ public class Oneal extends Animal {
     private static int swap_kill = 1;
     private static int count_kill = 0;
 
+    
     public Oneal(int x, int y, Image img) {
         super(x, y, img);
     }

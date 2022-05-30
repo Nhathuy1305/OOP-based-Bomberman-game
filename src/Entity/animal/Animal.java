@@ -11,6 +11,7 @@ public abstract class Animal extends Entity {
     protected int count_to_run;   //run after count frame
     protected boolean life;     //life of enemy
 
+    
     public Animal(int x_unit, int y_unit, Image img) {
         super(x_unit, y_unit, img);
     }

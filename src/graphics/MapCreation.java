@@ -10,6 +10,7 @@ import java.util.StringTokenizer;
 
 public class MapCreation {
     public CreateMap (String level) {
+        "user.dir"
         System.out.println(System.getProperty(key:"user.dir"));
         final File fileName = new File(level);
         try (FileReader inputFile = new FileReader(fileName)) {

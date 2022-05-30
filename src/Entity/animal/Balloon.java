@@ -19,13 +19,16 @@ public class Balloon extends Animal {
             if (swap_kill == 1) {
                 animal.setImg(Sprite.mob_dead1.getFxImage());
                 swap_kill = 2;
-            } else if (swap_kill == 2) {
+            } 
+            else if (swap_kill == 2) {
                 animal.setImg(Sprite.mob_dead2.getFxImage());
                 swap_kill = 3;
-            } else if (swap_kill == 3) {
+            } 
+            else if (swap_kill == 3) {
                 animal.setImg(Sprite.mob_dead3.getFxImage());
                 swap_kill = 4;
-            } else {
+            } 
+            else {
                 animal.setLife(false);
                 enemy.remove(animal);
                 swap_kill = 1;

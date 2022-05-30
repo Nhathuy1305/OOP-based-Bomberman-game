@@ -12,6 +12,7 @@ public class Bomber extends Animal {
     }
 
     public Bomber() {
+        
     }
 
     public Bomber(int x, int y, Image img) {

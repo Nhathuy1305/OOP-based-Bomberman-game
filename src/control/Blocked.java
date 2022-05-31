@@ -1,5 +1,6 @@
 package control;
 
+
 public class Blocked {
 
     public static boolean block_down(Entity entity) {

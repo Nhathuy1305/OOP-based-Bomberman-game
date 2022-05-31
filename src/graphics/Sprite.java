@@ -183,4 +183,14 @@ public class Sprite {
         pixels = new int[this.SIZE * this.SIZE];
         setColor(color);
     }
+
+    public int getSIZE() {
+        return SIZE;
+    }
+
+    public int getPixel(int i) {
+        return pixels[i];
+    }
+
+
 }

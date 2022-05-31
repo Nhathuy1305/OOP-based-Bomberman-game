@@ -10,10 +10,11 @@ public class Ballom extends Animal {
     public Ballom(int is_move, int swap, String direction, int count, int count_to_run) {
         super(4, 1, "up", 0, 0);
     }
+    
+    public Ballom(){
 
-    public Ballom() {
     }
-
+    
     private void killBallom(Animal animal) {
         if (count_kill % 16 == 0) {
             if (swap_kill == 1) {

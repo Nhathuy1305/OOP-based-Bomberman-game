@@ -130,5 +130,13 @@ public class Sprite {
     public static Sprite explosion_vertical_1 = new Sprite(ORIGINAL_SIZE, 2, 5, 16, 16, SpriteSheet.tiles);
     public static Sprite explosion_vertical_2 = new Sprite(ORIGINAL_SIZE, 3, 5, 16, 16, SpriteSheet.tiles);
 
+    public static Sprite explosion_horizontal = new Sprite(ORIGINAL_SIZE, 1, 7, 16, 16, SpriteSheet.tiles);
+    public static Sprite explosion_horizontal_1 = new Sprite(ORIGINAL_SIZE, 1, 8, 16, 16, SpriteSheet.tiles);
+    public static Sprite explosion_horizontal_2 = new Sprite(ORIGINAL_SIZE, 1, 9, 16, 16, SpriteSheet.tiles);
+
+    public static Sprite explosion_horizontal_left_last = new Sprite(ORIGINAL_SIZE, 0, 7 ,16, 16, SpriteSheet.tiles);
+    public static Sprite explosion_horizontal_left_last_1 = new Sprite(ORIGINAL_SIZE, 0, 8, 16, 16, SpriteSheet.tiles);
+    public static Sprite explosion_horizontal_left_last_2 = new Sprite(ORIGINAL_SIZE, 0, 9, 16, 16, SpriteSheet.tiles);
+
 
 }

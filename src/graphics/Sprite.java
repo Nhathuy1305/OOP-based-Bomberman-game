@@ -154,4 +154,13 @@ public class Sprite {
     public static Sprite brick_exploded = new Sprite(ORIGINAL_SIZE, 7, 1, 16, 16, SpriteSheet.tiles);
     public static Sprite brick_exploded_1 = new Sprite(ORIGINAL_SIZE, 7, 2, 16, 16, SpriteSheet.tiles);
     public static Sprite brick_exploded_2 = new Sprite(ORIGINAL_SIZE, 7, 3, 16, 16, SpriteSheet.tiles);
+
+    /* Powerups */
+    public static Sprite powerup_bombs = new Sprite(ORIGINAL_SIZE, 0, 10, 16, 16, SpriteSheet.tiles);
+    public static Sprite powerup_flames = new Sprite(ORIGINAL_SIZE, 1, 10, 16, 16, SpriteSheet.tiles);
+    public static Sprite powerup_speed = new Sprite(ORIGINAL_SIZE, 2, 10, 16, 16, SpriteSheet.tiles);
+    public static Sprite powerup_wallpass = new Sprite(ORIGINAL_SIZE, 3, 10, 16, 16, SpriteSheet.tiles);
+    public static Sprite powerup_detonator = new Sprite(ORIGINAL_SIZE, 4, 10, 16, 16, SpriteSheet.tiles);
+    public static Sprite powerup_bombpass = new Sprite(ORIGINAL_SIZE, 5, 10, 16, 16, SpriteSheet.tiles);
+    public static Sprite powerup_flamepass = new Sprite(ORIGINAL_SIZE, 6, 10, 16, 16, SpriteSheet.tiles);
 }

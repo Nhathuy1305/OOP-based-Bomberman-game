@@ -3,18 +3,18 @@ package Entity.animal;
 import Entity.animal.Animal;
 import java.util.Random;
 
-public class Balloon extends Animal {
+public class Ballom extends Animal {
     private static int swap_kill = 1;
     private static int count_kill = 0;
 
-    public Balloon(int is_move, int swap, String direction, int count, int count_to_run) {
+    public Ballom(int is_move, int swap, String direction, int count, int count_to_run) {
         super(4, 1, "up", 0, 0);
     }
 
-    public Balloon() {
+    public Ballom() {
     }
 
-    private void killBalloon(Animal animal) {
+    private void killBallom(Animal animal) {
         if (count_kill % 16 == 0) {
             if (swap_kill == 1) {
                 animal.setImg(Sprite.mob_dead1.getFxImage());
@@ -44,7 +44,7 @@ public class Balloon extends Animal {
         }
     }
 
-    public Balloon(int x, int y, Image img) {
+    public Ballom(int x, int y, Image img) {
         super(x, y, img);
     }
 
@@ -53,8 +53,8 @@ public class Balloon extends Animal {
         kill();
         count_kill++;
         for (Animal animal : enemy) {
-            if (animal instanceof Balloon && !animal.life)
-                killBalloon(animal);
+            if (animal instanceof Ballom && !animal.life)
+                killBallom(animal);
         }
 
         if (this.y % 16 == 0 && this.x % 16 == 0) {

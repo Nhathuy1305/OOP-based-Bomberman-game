@@ -121,5 +121,9 @@ public class Sprite {
     public static Sprite bomb_1 = new Sprite(ORIGINAL_SIZE, 1, 3, 13, 15, SpriteSheet.tiles);
     public static Sprite bomb_2 = new Sprite(ORIGINAL_SIZE, 2, 3, 12, 14, SpriteSheet.tiles);
 
+    // FlameSegment Sprites
+    public static Sprite bomb_exploded = new Sprite(ORIGINAL_SIZE, 0, 4, 16, 16, SpriteSheet.tiles);
+    public static Sprite bomb_exploded_1 = new Sprite(ORIGINAL_SIZE, 0, 5, 16, 16, SpriteSheet.tiles);
+    public static Sprite bomb_exploded_2 = new Sprite(ORIGINAL_SIZE, 0, 6, 16, 16, SpriteSheet.tiles);
 
 }

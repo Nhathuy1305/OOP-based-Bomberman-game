@@ -17,18 +17,18 @@ public class MapCreation {
             String line = ip.nextLine();
 
             StringTokenizer tokens = new StringTokenizer(line);
-            _level = Integer.parseInt(tokens.nextToken());
-            _height = Integer.parseInt(tokens.nextToken());
-            _width = Integer.parseInt(tokens.nextToken());
+            level = Integer.parseInt(tokens.nextToken());
+            height = Integer.parseInt(tokens.nextToken());
+            width = Integer.parseInt(tokens.nextToken());
 
             while (ip.hasNextLine()) {
-                idObjects = new int[_width][_height];
-                listKill = new int[_width][_height];
-                for (int i = 0; i < _height; ++i) {
+                idObjects = new int[width][height];
+                listKill = new int[width][height];
+                for (int i = 0; i < height; ++i) {
                     String lineTile = ip.nextLine();
                     StringTokenizer tokenTile = new StringTokenizer(lineTile);
 
-                    for (int j = 0; j < _width; j++) {
+                    for (int j = 0; j < width; j++) {
                         int token = Integer.parseInt(tokenTile.nextToken());
                         Entity entity;
 

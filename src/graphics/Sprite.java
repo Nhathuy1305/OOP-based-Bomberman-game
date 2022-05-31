@@ -6,19 +6,27 @@ public class Sprite {
     private static final int TRANSPARENT_COLOR = 0xffff00f;
     public final int SIZE;
     private int x, y;
-    public int[] _pixels;
-    protected int _realWidth;
-    protected int _realHeight;
-    private SpriteSheet _sheet;
+    public int[] pixels;
+    protected int realWidth;
+    protected int realHeight;
+    private SpriteSheet sheet;
 
-    public Sprite(int SIZE, int x, int y, int _realWidth, int _realHeight, SpriteSheet _sheet) {
+    private void load() {
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 0; j < SIZE; j++) {
+                pixels[i + j * SIZE] = sheet.spritePixels[(x + x) + (y + y) * sheet.SIZE];
+            }
+        }
+    }
+
+    public Sprite(int SIZE, int x, int y, int realWidth, int realHeight, SpriteSheet sheet) {
         this.SIZE = SIZE;
         this.x = x * this.SIZE;
         this.y = y * this.SIZE;
-        this._realWidth = _realWidth;
-        this._realHeight = _realHeight;
-        this._sheet = _sheet;
-        _pixels = new int[this.SIZE * this.SIZE];
+        this.realWidth = realWidth;
+        this.realHeight = realHeight;
+        this.sheet = sheet;
+        pixels = new int[this.SIZE * this.SIZE];
         load();
     }
 
@@ -163,4 +171,16 @@ public class Sprite {
     public static Sprite powerup_detonator = new Sprite(ORIGINAL_SIZE, 4, 10, 16, 16, SpriteSheet.tiles);
     public static Sprite powerup_bombpass = new Sprite(ORIGINAL_SIZE, 5, 10, 16, 16, SpriteSheet.tiles);
     public static Sprite powerup_flamepass = new Sprite(ORIGINAL_SIZE, 6, 10, 16, 16, SpriteSheet.tiles);
+
+    private void setColor(int color) {
+        for (int i = 0; i < pixels.length; i++) {
+            pixels[i] = color;
+        }
+    }
+
+    public Sprite(int SIZE, int color) {
+        this.SIZE = SIZE;
+        pixels = new int[this.SIZE * this.SIZE];
+        setColor(color);
+    }
 }

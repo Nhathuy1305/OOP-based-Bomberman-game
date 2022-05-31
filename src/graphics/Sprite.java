@@ -209,4 +209,26 @@ public class Sprite {
         Image input = new ImageView(wr).getImage();
         return resample(input, SCALED_SIZE / ORIGINAL_SIZE);
     }
+
+    private Image resample(Image input, int scaleFactor) {
+        final int H = (int) input.getHeight();
+        final int W = (int) input.getWidth();
+        final int S = scaleFactor;
+
+        WritableImage output = new WritableImage(W * S, H * S);
+
+        PixelReader reader = input.getPixelReader();
+        PixelWriter writer = output.getPixelWriter();
+
+        for (int i = 0; i < H; i++) {
+            for (int j = 0; j < W; j++) {
+                final int argb = reader.getArgb(x, y);
+                for (int k = 0; k < S; k++) {
+                    for (int l = 0; l < S; l++)
+                        writer.setArgb(j * S + l, i * S + k, argb);
+                }
+            }
+        }
+        return output;
+    }
 }

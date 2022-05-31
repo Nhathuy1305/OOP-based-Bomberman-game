@@ -89,7 +89,7 @@ public class Sprite {
 
     public static Sprite doll_dead = new Sprite(ORIGINAL_SIZE, 13, 3, 16, 16, SpriteSheet.tiles);
 
-    // Minvo
+    // MINVO
     public static Sprite minvo_right_1 = new Sprite(ORIGINAL_SIZE, 9, 5, 16, 16, SpriteSheet.tiles);
     public static Sprite minvo_right_2 = new Sprite(ORIGINAL_SIZE, 9, 6, 16, 16, SpriteSheet.tiles);
     public static Sprite minvo_right_3 = new Sprite(ORIGINAL_SIZE, 9, 7, 16, 16, SpriteSheet.tiles);
@@ -100,7 +100,7 @@ public class Sprite {
 
     public static Sprite minvo_dead = new Sprite(ORIGINAL_SIZE, 8, 8, 16, 16, SpriteSheet.tiles);
 
-    // Kondoria
+    // KONDORIA
     public static Sprite kondoria_right_1 = new Sprite(ORIGINAL_SIZE, 11, 5, 16 ,16, SpriteSheet.tiles);
     public static Sprite kondoria_right_2 = new Sprite(ORIGINAL_SIZE, 11, 6, 16, 16, SpriteSheet.tiles);
     public static Sprite kondoria_right_3 = new Sprite(ORIGINAL_SIZE, 11, 7, 16, 16, SpriteSheet.tiles);
@@ -110,4 +110,16 @@ public class Sprite {
     public static Sprite kondoria_left_3 = new Sprite(ORIGINAL_SIZE, 10, 7, 16, 16, SpriteSheet.tiles);
 
     public static Sprite kondoria_dead = new Sprite(ORIGINAL_SIZE, 10, 8, 16, 16, SpriteSheet.tiles);
+
+    // ALL
+    public static Sprite mob_dead_1 = new Sprite(ORIGINAL_SIZE, 15, 0, 16, 16, SpriteSheet.tiles);
+    public static Sprite mob_dead_2 = new Sprite(ORIGINAL_SIZE, 15, 1, 16, 16, SpriteSheet.tiles);
+    public static Sprite mob_dead_3 = new Sprite(ORIGINAL_SIZE, 15, 2, 16, 16, SpriteSheet.tiles);
+
+    // BOMB SPRITES
+    public static Sprite bomb = new Sprite(ORIGINAL_SIZE, 0, 3, 15, 15, SpriteSheet.tiles);
+    public static Sprite bomb_1 = new Sprite(ORIGINAL_SIZE, 1, 3, 13, 15, SpriteSheet.tiles);
+    public static Sprite bomb_2 = new Sprite(ORIGINAL_SIZE, 2, 3, 12, 14, SpriteSheet.tiles);
+
+
 }

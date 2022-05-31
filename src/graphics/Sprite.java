@@ -1,5 +1,7 @@
 package graphics;
 
+import javafx.scene.image.*;
+
 public class Sprite {
     public static final int ORIGINAL_SIZE = 16;
     public static final int SCALED_SIZE = ORIGINAL_SIZE * 2;
@@ -192,5 +194,19 @@ public class Sprite {
         return pixels[i];
     }
 
-
+    public Image getFxImage() {
+        WritableImage wr = new WritableImage(SIZE, SIZE);
+        PixelWriter pw = wr.getPixelWriter();
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 0; j < SIZE; j++) {
+                if (pixels[x + y * SIZE] == TRANSPARENT_COLOR) {
+                    pw.setArgb(x, y, 0);
+                } else {
+                    pw.setArgb(x, y, pixels[x + y * SIZE]);
+                }
+            }
+        }
+        Image input = new ImageView(wr).getImage();
+        return resample(input, SCALED_SIZE / ORIGINAL_SIZE);
+    }
 }

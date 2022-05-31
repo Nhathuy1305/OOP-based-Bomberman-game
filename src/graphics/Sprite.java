@@ -99,4 +99,15 @@ public class Sprite {
     public static Sprite minvo_left_3 = new Sprite(ORIGINAL_SIZE, 8, 7, 16, 16, SpriteSheet.tiles);
 
     public static Sprite minvo_dead = new Sprite(ORIGINAL_SIZE, 8, 8, 16, 16, SpriteSheet.tiles);
+
+    // Kondoria
+    public static Sprite kondoria_right_1 = new Sprite(ORIGINAL_SIZE, 11, 5, 16 ,16, SpriteSheet.tiles);
+    public static Sprite kondoria_right_2 = new Sprite(ORIGINAL_SIZE, 11, 6, 16, 16, SpriteSheet.tiles);
+    public static Sprite kondoria_right_3 = new Sprite(ORIGINAL_SIZE, 11, 7, 16, 16, SpriteSheet.tiles);
+
+    public static Sprite kondoria_left_1 = new Sprite(ORIGINAL_SIZE, 10, 5, 16, 16, SpriteSheet.tiles);
+    public static Sprite kondoria_left_2 = new Sprite(ORIGINAL_SIZE, 10, 6, 16, 16, SpriteSheet.tiles);
+    public static Sprite kondoria_left_3 = new Sprite(ORIGINAL_SIZE, 10, 7, 16, 16, SpriteSheet.tiles);
+
+    public static Sprite kondoria_dead = new Sprite(ORIGINAL_SIZE, 10, 8, 16, 16, SpriteSheet.tiles);
 }

@@ -5,16 +5,16 @@ public class Sprite {
     public static final int SCALED_SIZE = ORIGINAL_SIZE * 2;
     private static final int TRANSPARENT_COLOR = 0xffff00f;
     public final int SIZE;
-    private int _x, _y;
+    private int x, y;
     public int[] _pixels;
     protected int _realWidth;
     protected int _realHeight;
     private SpriteSheet _sheet;
 
-    public Sprite(int SIZE, int _x, int _y, int _realWidth, int _realHeight, SpriteSheet _sheet) {
+    public Sprite(int SIZE, int x, int y, int _realWidth, int _realHeight, SpriteSheet _sheet) {
         this.SIZE = SIZE;
-        this._x = _x * this.SIZE;
-        this._y = _y * this.SIZE;
+        this.x = x * this.SIZE;
+        this.y = y * this.SIZE;
         this._realWidth = _realWidth;
         this._realHeight = _realHeight;
         this._sheet = _sheet;
@@ -116,12 +116,12 @@ public class Sprite {
     public static Sprite mob_dead_2 = new Sprite(ORIGINAL_SIZE, 15, 1, 16, 16, SpriteSheet.tiles);
     public static Sprite mob_dead_3 = new Sprite(ORIGINAL_SIZE, 15, 2, 16, 16, SpriteSheet.tiles);
 
-    // BOMB SPRITES
+    /* BOMB SPRITES */
     public static Sprite bomb = new Sprite(ORIGINAL_SIZE, 0, 3, 15, 15, SpriteSheet.tiles);
     public static Sprite bomb_1 = new Sprite(ORIGINAL_SIZE, 1, 3, 13, 15, SpriteSheet.tiles);
     public static Sprite bomb_2 = new Sprite(ORIGINAL_SIZE, 2, 3, 12, 14, SpriteSheet.tiles);
 
-    // FlameSegment Sprites
+    /* FlameSegment Sprites */
     public static Sprite bomb_exploded = new Sprite(ORIGINAL_SIZE, 0, 4, 16, 16, SpriteSheet.tiles);
     public static Sprite bomb_exploded_1 = new Sprite(ORIGINAL_SIZE, 0, 5, 16, 16, SpriteSheet.tiles);
     public static Sprite bomb_exploded_2 = new Sprite(ORIGINAL_SIZE, 0, 6, 16, 16, SpriteSheet.tiles);
@@ -150,4 +150,8 @@ public class Sprite {
     public static Sprite explosion_vertical_down_last_1 = new Sprite(ORIGINAL_SIZE, 2, 6, 16, 16, SpriteSheet.tiles);
     public static Sprite explosion_vertical_down_last_2 = new Sprite(ORIGINAL_SIZE, 3, 6, 16, 16, SpriteSheet.tiles);
 
+    /* Brick Flame Segment */
+    public static Sprite brick_exploded = new Sprite(ORIGINAL_SIZE, 7, 1, 16, 16, SpriteSheet.tiles);
+    public static Sprite brick_exploded_1 = new Sprite(ORIGINAL_SIZE, 7, 2, 16, 16, SpriteSheet.tiles);
+    public static Sprite brick_exploded_2 = new Sprite(ORIGINAL_SIZE, 7, 3, 16, 16, SpriteSheet.tiles);
 }

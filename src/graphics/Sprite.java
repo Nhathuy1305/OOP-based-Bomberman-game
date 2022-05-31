@@ -126,4 +126,9 @@ public class Sprite {
     public static Sprite bomb_exploded_1 = new Sprite(ORIGINAL_SIZE, 0, 5, 16, 16, SpriteSheet.tiles);
     public static Sprite bomb_exploded_2 = new Sprite(ORIGINAL_SIZE, 0, 6, 16, 16, SpriteSheet.tiles);
 
+    public static Sprite explosion_vertical = new Sprite(ORIGINAL_SIZE, 1, 5, 16, 16, SpriteSheet.tiles);
+    public static Sprite explosion_vertical_1 = new Sprite(ORIGINAL_SIZE, 2, 5, 16, 16, SpriteSheet.tiles);
+    public static Sprite explosion_vertical_2 = new Sprite(ORIGINAL_SIZE, 3, 5, 16, 16, SpriteSheet.tiles);
+
+
 }

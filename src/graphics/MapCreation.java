@@ -1,7 +1,8 @@
 package graphics;
 
+import Entity.Entity;
+import Entity.block.Brick;
 
-import javax.swing.text.html.parser.Entity;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;

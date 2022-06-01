@@ -1,6 +1,8 @@
 package Entity.animal;
 
-import Entity.animal.Animal;
+import javafx.scene.image.Image;
+import Graphics.Sprite;
+
 import java.util.Random;
 
 public class Ballom extends Animal {

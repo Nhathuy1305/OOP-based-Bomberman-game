@@ -2,6 +2,7 @@ package Entity.block;
 
 import javafx.scene.image.Image;
 import Entity.Entity;
+import Graphics.Sprite;
 
 public class Brick extends Entity {
 

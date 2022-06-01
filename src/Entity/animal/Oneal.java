@@ -1,6 +1,6 @@
 package Entity.animal;
 
-import Entity.animal.Animal;
+import Graphics.Sprite;
 
 public class Oneal extends Animal {
     private static int swap_kill = 1;

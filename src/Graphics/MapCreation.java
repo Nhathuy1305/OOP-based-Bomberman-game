@@ -28,8 +28,8 @@ public class MapCreation {
             width = Integer.parseInt(tokens.nextToken());
 
             while (ip.hasNextLine()) {
-                idObjects = new int[width][height];                 //
-                listKill = new int[width][height];                  //
+                id_objects = new int[width][height];                 //
+                list_kill = new int[width][height];                  //
                 for (int i = 0; i < height; ++i) {
                     String lineTile = ip.nextLine();                // Input variable lineTile in string data type.
                     StringTokenizer tokenTile = new StringTokenizer(lineTile);      // Create object tokenTile from class StringTokenizer in library imported.
@@ -60,7 +60,7 @@ public class MapCreation {
                             default:
                                 entity = new Grass(j, i, Sprite.grass.getFxImage());
                         }
-                        idObjects[j][i] = token;        //
+                        id_objects[j][i] = token;        //
                         block.add(entity);              //
                     }
                 }

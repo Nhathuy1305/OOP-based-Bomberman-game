@@ -1,7 +1,5 @@
 package graphics;
 
-// Import library.
-import javax.swing.text.html.parser.Entity;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException; // IOException is the base class for exceptions thrown while accessing information using streams, files and directories.

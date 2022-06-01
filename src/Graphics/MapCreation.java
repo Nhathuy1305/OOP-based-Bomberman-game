@@ -1,8 +1,10 @@
 package Graphics;
 
+// Import class
 import Entity.Entity;
 import Entity.block.Brick;
 
+// Import library
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException; // IOException is the base class for exceptions thrown while accessing information using streams, files and directories.
@@ -36,6 +38,8 @@ public class MapCreation {
                         int token = Integer.parseInt(tokenTile.nextToken());
                         Entity entity;                              // Create object entity from class Entity.
 
+                        // This switch statement running, and we got a full map for a game.
+                        // Through the program, in the for-loop statement, we can get the map according to each loop it passed.
                         switch (token) {
                             case 1:
                                 entity = new Portal(j, i, Sprite.grass.getFxImage());       // In case 1, set entity object equal to object portal with scaled size.

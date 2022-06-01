@@ -9,8 +9,8 @@ public class Sprite {
     public final int SIZE;
     private int x, y;
     public int[] pixels;
-    protected int realWidth;
-    protected int realHeight;
+    protected int real_width;
+    protected int real_height;
     private SpriteSheet sheet;
 
     private void load() {
@@ -21,12 +21,12 @@ public class Sprite {
         }
     }
 
-    public Sprite(int SIZE, int x, int y, int realWidth, int realHeight, SpriteSheet sheet) {
+    public Sprite(int SIZE, int x, int y, int real_width, int real_height, SpriteSheet sheet) {
         this.SIZE = SIZE;
         this.x = x * this.SIZE;
         this.y = y * this.SIZE;
-        this.realWidth = realWidth;
-        this.realHeight = realHeight;
+        this.real_width = real_width;
+        this.real_height = real_height;
         this.sheet = sheet;
         pixels = new int[this.SIZE * this.SIZE];
         load();

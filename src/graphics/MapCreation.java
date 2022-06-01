@@ -1,29 +1,31 @@
 package graphics;
 
-
+// Import library.
 import javax.swing.text.html.parser.Entity;
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
+import java.io.IOException; // IOException is the base class for exceptions thrown while accessing information using streams, files and directories.
 import java.util.Scanner;
-import java.util.StringTokenizer;
+import java.util.StringTokenizer; // The java.util.StringTokenizer class allows you to split a string into its token elements.
 
 public class MapCreation {
-    public CreateMap (String level) {
+    // Constructor MapCreation with parameter "level" in string data type.
+    public MapCreation(String level) {
         System.out.println(System.getProperty(key:"user.dir"));
-        final File fileName = new File(level);
-        try (FileReader inputFile = new FileReader(fileName)) {
-            Scanner ip = new Scanner(inputFile);
-            String line = ip.nextLine();
+        final File fileName = new File(level);                      // Create object fileName from class File in File library imported.
+        try (FileReader inputFile = new FileReader(fileName)) {     // Try to create new object from class FileReader.
+            Scanner ip = new Scanner(inputFile);                    // Create object ip from class Scanner.
+            String line = ip.nextLine();                            // Input variable line in string data type.
 
-            StringTokenizer tokens = new StringTokenizer(line);
+            StringTokenizer tokens = new StringTokenizer(line);     // Create object tokens from class StringTokenizer in library imported.
+            // parseInt(): Method that parses the string argument and returns a primitive int.
             level = Integer.parseInt(tokens.nextToken());
             height = Integer.parseInt(tokens.nextToken());
             width = Integer.parseInt(tokens.nextToken());
 
             while (ip.hasNextLine()) {
-                idObjects = new int[width][height];
-                listKill = new int[width][height];
+                idObjects = new int[width][height];                 //
+                listKill = new int[width][height];                  //
                 for (int i = 0; i < height; ++i) {
                     String lineTile = ip.nextLine();
                     StringTokenizer tokenTile = new StringTokenizer(lineTile);

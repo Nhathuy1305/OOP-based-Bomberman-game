@@ -1,4 +1,4 @@
-package control;
+package Control;
 
 
 public class Blocked {

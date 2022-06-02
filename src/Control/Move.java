@@ -1,4 +1,4 @@
-package control;
+package Control;
 
 public class Move {
     public static void checkRun(Animal animal) { //check if 

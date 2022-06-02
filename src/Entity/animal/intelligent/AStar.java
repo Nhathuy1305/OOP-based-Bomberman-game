@@ -46,6 +46,18 @@ public class AStar {
         return final_node;
     }
 
+    private boolean isFinalNode(Node current_node) {
+        return current_node.equals(final_node);
+    }
+
+    private boolean isEmpty(PriorityQueue<Node> open_list) {
+        return open_list.size() == 0;
+    }
+
+    private void setBlock(int row, int col) {
+        this.search_area[row][col].setIs_block(true);
+    }
+
     public void setFinal_node(Node final_node) {
         this.final_node = final_node;
     }
@@ -73,12 +85,96 @@ public class AStar {
         for (int i = 0; i < count; i++) {
             int row = blocks_array[i][0];
             int col = blocks_array[i][1];
-            setBlocks(row, col);
+            setBlock(row, col);
         }
     }
 
     public List<Node> findPath() {
         open_list.add(initial_node);
-        while ()
+        while (!isEmpty(open_list)) {
+            Node current_node = open_list.poll();
+            closed_set.add(current_node);
+            assert current_node != null;
+            if (isFinalNode(current_node)) {
+                return getPath(current_node);
+            } else {
+                addAdjacentNodes(current_node);
+            }
+        }
+        return new ArrayList<Node>();
+    }
+
+    public List<Node> getPath(Node current_node) {
+        List<Node> path = new ArrayList<Node>();
+        path.add(current_node);
+        Node parent;
+        while ((parent = current_node.getParent()) != null) {
+            path.add(0, parent);
+            current_node = parent;
+        }
+        return path;
+    }
+
+    private void checkNode(Node current_node, int col, int row) {
+        Node adjacent_node = getSearch_area()[row][col];
+        if (!adjacent_node.isIs_block() && !getClosed_set().contains(adjacent_node)) {
+            if (!getOpen_list().contains(adjacent_node)) {
+                adjacent_node.setNodeData(current_node);
+                getOpen_list().add(adjacent_node);
+            } else {
+                boolean changed = adjacent_node.checkBetterPath(current_node);
+                if (changed) {
+                    getOpen_list().remove(adjacent_node);
+                    getOpen_list().add(adjacent_node);
+                }
+            }
+        }
+    }
+
+    private void addAdjacentUpperRow(Node current_node) {
+        int row = current_node.getRow();
+        int col = current_node.getCol();
+        int upper_row = row - 1;
+        if (upper_row >= 0) {
+            if (col - 1 >= 0) {
+                checkNode(current_node, col - 1, upper_row);
+            }
+            if (col + 1 < getSearch_area()[0].length) {
+                checkNode(current_node, col + 1, upper_row);
+            }
+            checkNode(current_node, col, upper_row);
+        }
+    }
+
+    private void addAdjacentLowerRow(Node current_node) {
+        int row = current_node.getRow();
+        int col = current_node.getCol();
+        int lower_row = row + 1;
+        if (lower_row < getSearch_area().length) {
+            if (col - 1 >= 0) {
+                checkNode(current_node, col - 1, lower_row);
+            }
+            if (col + 1 < getSearch_area()[0].length) {
+                checkNode(current_node, col + 1, lower_row);
+            }
+            checkNode(current_node, col, lower_row);
+        }
+    }
+
+    private void addAdjacentMiddleRow(Node current_node) {
+        int row = current_node.getRow();
+        int col = current_node.getCol();
+        if (col - 1 >= 0) {
+            checkNode(current_node, col - 1, row);
+        }
+        if (col + 1 < getSearch_area()[0].length) {
+            checkNode(current_node, col + 1, row);
+        }
+    }
+
+    private void addAdjacentNodes(Node current_node) {
+        addAdjacentUpperRow(current_node);
+        addAdjacentLowerRow(current_node);
+        addAdjacentMiddleRow(current_node);
     }
 }

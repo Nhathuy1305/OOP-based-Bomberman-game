@@ -1,4 +1,4 @@
-package control;
+package Control;
 
 import javafx.scene.Group;
 import javafx.scene.image.Image;

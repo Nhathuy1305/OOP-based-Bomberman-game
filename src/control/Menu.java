@@ -11,7 +11,7 @@ import javafx.scene.text.Text;
 
 
 public class Menu {
-    private static ImageView statusGame;
+    private static ImageView status_game;
     public static Text level, bomb, time;
     public static int bombNumber = 20, timeNumber = 120;
 

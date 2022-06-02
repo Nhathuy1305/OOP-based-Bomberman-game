@@ -13,7 +13,7 @@ public class Brick extends Entity {
     private void checkHidden() {
         for (Entity entity : block) {
             if (entity instanceof Brick)
-                if (listKill[entity.getX() / 32][entity.getY() / 32] == 4) {
+                if (list_kill[entity.getX() / 32][entity.getY() / 32] == 4) {
                     entity.setImg(Sprite.grass.getFxImage());
                 }
         }

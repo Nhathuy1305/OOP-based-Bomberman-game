@@ -58,13 +58,16 @@ public class Bomb extends Entity {
         if (swap_active == 1) {
             bomb.setImg(Sprite.bomb.getFxImage());
             swap_active = 2;
-        } else if (swap_active == 2) {
+        } 
+        else if (swap_active == 2) {
             bomb.setImg(Sprite.bomb_1.getFxImage());
             swap_active = 3;
-        } else if (swap_active == 3) {
+        } 
+        else if (swap_active == 3) {
             bomb.setImg(Sprite.bomb_2.getFxImage());
             swap_active = 4;
-        } else {
+        } 
+        else {
             bomb.setImg(Sprite.bomb_1.getFxImage());
             swap_active = 1;
         }
@@ -191,7 +194,8 @@ public class Bomb extends Entity {
             }
 
             swap_explosion = 2;
-        } else if (swap_explosion == 2) {
+        } 
+        else if (swap_explosion == 2) {
             bomb.setImg(Sprite.bomb_exploded1.getFxImage());
             if (Blocked.block_down_bomb(bomb, power_bomb_down)) {
                 edge_down.setImg(Sprite.explosion_vertical_down_last1.getFxImage());
@@ -226,7 +230,8 @@ public class Bomb extends Entity {
             }
 
             swap_explosion = 3;
-        } else if (swap_explosion == 3) {
+        } 
+        else if (swap_explosion == 3) {
             bomb.setImg(Sprite.bomb_exploded2.getFxImage());
             if (Blocked.block_down_bomb(bomb, power_bomb_down)) {
                 edge_down.setImg(Sprite.explosion_vertical_down_last2.getFxImage());
@@ -272,7 +277,8 @@ public class Bomb extends Entity {
                     activeBomb();
                     time_tmp += 100L;
                 }
-            } else {
+            } 
+            else {
                 is_bomb = 2;
                 time_bomb = System.currentTimeMillis();
                 time_tmp = time_bomb;
@@ -299,7 +305,8 @@ public class Bomb extends Entity {
                     explosionCenter();
                     time_tmp += 100L;
                 }
-            } else {
+            } 
+            else {
                 is_bomb = 0;
                 BombermanGame.idObjects[bomb.getX() / 32][bomb.getY() / 32] = 0;
                 BombermanGame.listKill[bomb.getX() / 32][bomb.getY() / 32] = 0;

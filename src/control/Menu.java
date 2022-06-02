@@ -15,7 +15,7 @@ public class Menu {
     public static Text level, bomb, time;
     public static int bombNumber = 20, timeNumber = 120;
 
-    public static void createMenu(Group root) {
+    public static void createMenu(Group root) { //Create a menu
         level = new Text("Level: 1");
         level.setFont(Font.font("Arial", FontWeight.BOLD, 14));
         level.setFill(Color.WHITE);
@@ -59,7 +59,7 @@ public class Menu {
 
     }
 
-    public static void updateMenu() {
+    public static void updateMenu() { //Update menu
         level.setText("Level: " + _level);
         bomb.setText("Bombs: " + bombNumber);
 

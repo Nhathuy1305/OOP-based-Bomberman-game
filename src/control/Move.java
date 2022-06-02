@@ -1,7 +1,7 @@
 package control;
 
 public class Move {
-    public static void checkRun(Animal animal) {
+    public static void checkRun(Animal animal) { //check if 
         if (animal instanceof Bomber && animal.getCount() > 0) {
             setDirection(animal.getDirection(), animal, 8 * speed);
             animal.setCount(animal.getCount() - 1);

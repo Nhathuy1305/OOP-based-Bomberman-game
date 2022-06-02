@@ -8,15 +8,8 @@
             "type": "java",
             "name": "Launch Current File",
             "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
+            "mainClass": "${file}",
             "vmArgs": "--module-path C:/Users/hoang/Desktop/openjfx-18.0.1_windows-x64_bin-sdk/javafx-sdk-18.0.1/lib --add-modules javafx.controls,javafx.fxml",
-            "type": "java",
-            "name": "Launch BombermanGame",
-            "request": "launch",
-            "mainClass": "sontran.BombermanGame",
-            "projectName": "bomberman"
         }
     ]
 }

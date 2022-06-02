@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Ballom extends Animal {
     private static int swap_kill = 1;
-    private static int count_kill = 0;
+    private static int count_kill = 0;  // Count the number of Balloms destroyed
 
     public Ballom(int is_move, int swap, String direction, int count, int count_to_run) {
         super(4, 1, "up", 0, 0);
@@ -15,7 +15,7 @@ public class Ballom extends Animal {
 
     }
     
-    private void killBallom(Animal animal) {
+    private void killBallom(Animal animal) {    //Bomber destroys Balloon
         if (count_kill % 16 == 0) {
             if (swap_kill == 1) {
                 animal.setImg(Sprite.mob_dead1.getFxImage());
@@ -39,7 +39,7 @@ public class Ballom extends Animal {
 
     private void kill() {
         for (Animal animal : enemy) {
-            if (listKill[animal.getX() / 32][animal.getY() / 32] == 4) {
+            if (list_kill[animal.getX() / 32][animal.getY() / 32] == 4) {
                 animal.setLife(false);
             }
         }

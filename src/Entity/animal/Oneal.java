@@ -20,6 +20,7 @@ public class Oneal extends Animal {
     }
 
     public Oneal() {
+        
     }
 
     private void killOneal(Animal animal) {

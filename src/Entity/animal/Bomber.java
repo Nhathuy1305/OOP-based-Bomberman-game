@@ -43,7 +43,7 @@ public class Bomber extends Animal {
     }
 
     private void checkBombs() {
-        if (listKill[player.getX() / 32][player.getY() / 32] == 4)
+        if (list_kill[player.getX() / 32][player.getY() / 32] == 4)
             player.setLife(false);
     }
 

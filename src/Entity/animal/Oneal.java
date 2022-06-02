@@ -1,5 +1,6 @@
 package Entity.animal;
 
+import Control.Move;
 import Graphics.Sprite;
 
 public class Oneal extends Animal {

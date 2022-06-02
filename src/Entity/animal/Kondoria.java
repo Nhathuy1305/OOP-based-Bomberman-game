@@ -1,5 +1,6 @@
 package Entity.animal;
 
+import Control.Move;
 import javafx.scene.image.Image;
 import Graphics.Sprite;
 

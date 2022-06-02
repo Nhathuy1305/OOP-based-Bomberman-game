@@ -1,6 +1,10 @@
 package Entity.animal;
 
 import java.util.List;
+
+import Control.Move;
+import Entity.animal.intelligent.AStar;
+import Entity.animal.intelligent.Node;
 import Graphics.Sprite;
 
 public class Doll extends Animal{

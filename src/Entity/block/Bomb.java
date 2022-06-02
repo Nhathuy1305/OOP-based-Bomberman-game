@@ -38,8 +38,8 @@ public class Bomb extends Entity {
     }
 
     public static void putBomb() {
-        if (is_bomb == 0 && Menu.bombNumber > 0) {
-            --Menu.bombNumber;
+        if (is_bomb == 0 && Menu.bomb_number > 0) {
+            --Menu.bomb_number;
             is_bomb = 1;
             time_bomb = System.currentTimeMillis();
             time_tmp = time_bomb;

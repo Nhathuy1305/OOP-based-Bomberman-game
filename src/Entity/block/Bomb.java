@@ -1,16 +1,17 @@
 package Entity.block;
 
 import Entity.Entity;
+import Control.Blocked;
+import Graphics.Sprite;
+import Features.SoundManager;
+
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import javafx.scene.image.Image;
-import BombermanGame;
-import control.Blocked;
-import control.Menu;
-import entities.Entity;
-import graphics.Sprite;
-import utility.SoundManager;
+
+import static GameRunner.RunBomberman.*;
+import static GameRunner.RunBomberman.player;
+import static Control.Menu.bomb_number;
 
 public class Bomb extends Entity {
     private static long time_bomb;
@@ -38,18 +39,18 @@ public class Bomb extends Entity {
     }
 
     public static void putBomb() {
-        if (is_bomb == 0 && Menu.bomb_number > 0) {
-            --Menu.bomb_number;
+        if (is_bomb == 0 && bomb_number > 0) {
+            bomb_number--;
             is_bomb = 1;
             time_bomb = System.currentTimeMillis();
             time_tmp = time_bomb;
-            int x = BombermanGame.player.getX() / 32;
-            int y = BombermanGame.player.getY() / 32;
+            int x = player.getX() / 32;
+            int y = player.getY() / 32;
             x = Math.round((float)x);
             y = Math.round((float)y);
             bomb = new Bomb(x, y, Sprite.bomb.getFxImage());
-            BombermanGame.block.add(bomb);
-            BombermanGame.idObjects[BombermanGame.player.getX() / 32][BombermanGame.player.getY() / 32] = 4;
+            block.add(bomb);
+            id_objects[player.getX() / 32][player.getY() / 32] = 4;
         }
 
     }
@@ -85,7 +86,7 @@ public class Bomb extends Entity {
                 }
             }
 
-            BombermanGame.block.add(edge_down);
+            block.add(edge_down);
         }
 
         if (Blocked.block_up_bomb(bomb, 0)) {
@@ -97,7 +98,7 @@ public class Bomb extends Entity {
                 }
             }
 
-            BombermanGame.block.add(edge_up);
+            block.add(edge_up);
         }
 
         if (Blocked.block_left_bomb(bomb, 0)) {
@@ -109,7 +110,7 @@ public class Bomb extends Entity {
                 }
             }
 
-            BombermanGame.block.add(edge_left);
+            block.add(edge_left);
         }
 
         if (Blocked.block_right_bomb(bomb, 0)) {
@@ -121,7 +122,7 @@ public class Bomb extends Entity {
                 }
             }
 
-            BombermanGame.block.add(edge_right);
+            block.add(edge_right);
         }
 
     }
@@ -149,45 +150,43 @@ public class Bomb extends Entity {
             list_bomb_middle_width.add(middle);
         }
 
-        BombermanGame.block.addAll(list_bomb_middle_width);
-        BombermanGame.block.addAll(list_bomb_middle_height);
+        block.addAll(list_bomb_middle_width);
+        block.addAll(list_bomb_middle_height);
     }
 
     public static void explosionCenter() {
-        Entity e;
-        Iterator var1;
         if (swap_explosion == 1) {
             bomb.setImg(Sprite.bomb_exploded.getFxImage());
-            BombermanGame.listKill[bomb.getX() / 32][bomb.getY() / 32] = 4;
+            list_kill[bomb.getX() / 32][bomb.getY() / 32] = 4;
             if (Blocked.block_down_bomb(bomb, power_bomb_down)) {
                 edge_down.setImg(Sprite.explosion_vertical_down_last.getFxImage());
-                BombermanGame.listKill[edge_down.getX() / 32][edge_down.getY() / 32] = 4;
+                list_kill[edge_down.getX() / 32][edge_down.getY() / 32] = 4;
             }
 
             if (Blocked.block_up_bomb(bomb, power_bomb_up)) {
                 edge_up.setImg(Sprite.explosion_vertical_top_last.getFxImage());
-                BombermanGame.listKill[edge_up.getX() / 32][edge_up.getY() / 32] = 4;
+                list_kill[edge_up.getX() / 32][edge_up.getY() / 32] = 4;
             }
 
             if (Blocked.block_left_bomb(bomb, power_bomb_left)) {
                 edge_left.setImg(Sprite.explosion_horizontal_left_last.getFxImage());
-                BombermanGame.listKill[edge_left.getX() / 32][edge_left.getY() / 32] = 4;
+                list_kill[edge_left.getX() / 32][edge_left.getY() / 32] = 4;
             }
 
             if (Blocked.block_right_bomb(bomb, power_bomb_right)) {
                 edge_right.setImg(Sprite.explosion_horizontal_right_last.getFxImage());
-                BombermanGame.listKill[edge_right.getX() / 32][edge_right.getY() / 32] = 4;
+                list_kill[edge_right.getX() / 32][edge_right.getY() / 32] = 4;
             }
 
             if (list_bomb_middle_height.size() > 0) {
-                for(var1 = list_bomb_middle_height.iterator(); var1.hasNext(); BombermanGame.listKill[e.getX() / 32][e.getY() / 32] = 4) {
+                for(var1 = list_bomb_middle_height.iterator(); var1.hasNext(); list_kill[e.getX() / 32][e.getY() / 32] = 4) {
                     e = (Entity)var1.next();
                     e.setImg(Sprite.explosion_vertical.getFxImage());
                 }
             }
 
             if (list_bomb_middle_width.size() > 0) {
-                for(var1 = list_bomb_middle_width.iterator(); var1.hasNext(); BombermanGame.listKill[e.getX() / 32][e.getY() / 32] = 4) {
+                for(var1 = list_bomb_middle_width.iterator(); var1.hasNext(); list_kill[e.getX() / 32][e.getY() / 32] = 4) {
                     e = (Entity)var1.next();
                     e.setImg(Sprite.explosion_horizontal.getFxImage());
                 }
@@ -196,21 +195,21 @@ public class Bomb extends Entity {
             swap_explosion = 2;
         } 
         else if (swap_explosion == 2) {
-            bomb.setImg(Sprite.bomb_exploded1.getFxImage());
+            bomb.setImg(Sprite.bomb_exploded_1.getFxImage());
             if (Blocked.block_down_bomb(bomb, power_bomb_down)) {
-                edge_down.setImg(Sprite.explosion_vertical_down_last1.getFxImage());
+                edge_down.setImg(Sprite.explosion_vertical_down_last_1.getFxImage());
             }
 
             if (Blocked.block_up_bomb(bomb, power_bomb_up)) {
-                edge_up.setImg(Sprite.explosion_vertical_top_last1.getFxImage());
+                edge_up.setImg(Sprite.explosion_vertical_top_last_1.getFxImage());
             }
 
             if (Blocked.block_left_bomb(bomb, power_bomb_left)) {
-                edge_left.setImg(Sprite.explosion_horizontal_left_last1.getFxImage());
+                edge_left.setImg(Sprite.explosion_horizontal_left_last_1.getFxImage());
             }
 
             if (Blocked.block_right_bomb(bomb, power_bomb_right)) {
-                edge_right.setImg(Sprite.explosion_horizontal_right_last1.getFxImage());
+                edge_right.setImg(Sprite.explosion_horizontal_right_last_1.getFxImage());
             }
 
             if (is_middle) {
@@ -218,35 +217,35 @@ public class Bomb extends Entity {
 
                 while(var1.hasNext()) {
                     e = (Entity)var1.next();
-                    e.setImg(Sprite.explosion_vertical1.getFxImage());
+                    e.setImg(Sprite.explosion_vertical_1.getFxImage());
                 }
 
                 var1 = list_bomb_middle_width.iterator();
 
                 while(var1.hasNext()) {
                     e = (Entity)var1.next();
-                    e.setImg(Sprite.explosion_horizontal1.getFxImage());
+                    e.setImg(Sprite.explosion_horizontal_1.getFxImage());
                 }
             }
 
             swap_explosion = 3;
         } 
         else if (swap_explosion == 3) {
-            bomb.setImg(Sprite.bomb_exploded2.getFxImage());
+            bomb.setImg(Sprite.bomb_exploded_2.getFxImage());
             if (Blocked.block_down_bomb(bomb, power_bomb_down)) {
-                edge_down.setImg(Sprite.explosion_vertical_down_last2.getFxImage());
+                edge_down.setImg(Sprite.explosion_vertical_down_last_2.getFxImage());
             }
 
             if (Blocked.block_up_bomb(bomb, power_bomb_up)) {
-                edge_up.setImg(Sprite.explosion_vertical_top_last2.getFxImage());
+                edge_up.setImg(Sprite.explosion_vertical_top_last_2.getFxImage());
             }
 
             if (Blocked.block_left_bomb(bomb, power_bomb_left)) {
-                edge_left.setImg(Sprite.explosion_horizontal_left_last2.getFxImage());
+                edge_left.setImg(Sprite.explosion_horizontal_left_last_2.getFxImage());
             }
 
             if (Blocked.block_right_bomb(bomb, power_bomb_right)) {
-                edge_right.setImg(Sprite.explosion_horizontal_right_last2.getFxImage());
+                edge_right.setImg(Sprite.explosion_horizontal_right_last_2.getFxImage());
             }
 
             if (is_middle) {
@@ -254,14 +253,14 @@ public class Bomb extends Entity {
 
                 while(var1.hasNext()) {
                     e = (Entity)var1.next();
-                    e.setImg(Sprite.explosion_vertical2.getFxImage());
+                    e.setImg(Sprite.explosion_vertical_2.getFxImage());
                 }
 
                 var1 = list_bomb_middle_width.iterator();
 
                 while(var1.hasNext()) {
                     e = (Entity)var1.next();
-                    e.setImg(Sprite.explosion_horizontal2.getFxImage());
+                    e.setImg(Sprite.explosion_horizontal_2.getFxImage());
                 }
             }
 
@@ -308,49 +307,49 @@ public class Bomb extends Entity {
             } 
             else {
                 is_bomb = 0;
-                BombermanGame.idObjects[bomb.getX() / 32][bomb.getY() / 32] = 0;
-                BombermanGame.listKill[bomb.getX() / 32][bomb.getY() / 32] = 0;
+                id_objects[bomb.getX() / 32][bomb.getY() / 32] = 0;
+                list_kill[bomb.getX() / 32][bomb.getY() / 32] = 0;
                 bomb.setImg(Sprite.transparent.getFxImage());
                 if (Blocked.block_down_bomb(bomb, power_bomb_down)) {
                     edge_down.setImg(Sprite.transparent.getFxImage());
-                    BombermanGame.idObjects[edge_down.getX() / 32][edge_down.getY() / 32] = 0;
-                    BombermanGame.listKill[edge_down.getX() / 32][edge_down.getY() / 32] = 0;
+                    id_objects[edge_down.getX() / 32][edge_down.getY() / 32] = 0;
+                    list_kill[edge_down.getX() / 32][edge_down.getY() / 32] = 0;
                 }
 
                 if (Blocked.block_up_bomb(bomb, power_bomb_up)) {
                     edge_up.setImg(Sprite.transparent.getFxImage());
-                    BombermanGame.idObjects[edge_up.getX() / 32][edge_up.getY() / 32] = 0;
-                    BombermanGame.listKill[edge_up.getX() / 32][edge_up.getY() / 32] = 0;
+                    id_objects[edge_up.getX() / 32][edge_up.getY() / 32] = 0;
+                    list_kill[edge_up.getX() / 32][edge_up.getY() / 32] = 0;
                 }
 
                 if (Blocked.block_left_bomb(bomb, power_bomb_left)) {
                     edge_left.setImg(Sprite.transparent.getFxImage());
-                    BombermanGame.idObjects[edge_left.getX() / 32][edge_left.getY() / 32] = 0;
-                    BombermanGame.listKill[edge_left.getX() / 32][edge_left.getY() / 32] = 0;
+                    id_objects[edge_left.getX() / 32][edge_left.getY() / 32] = 0;
+                    list_kill[edge_left.getX() / 32][edge_left.getY() / 32] = 0;
                 }
 
                 if (Blocked.block_right_bomb(bomb, power_bomb_right)) {
                     edge_right.setImg(Sprite.transparent.getFxImage());
-                    BombermanGame.idObjects[edge_right.getX() / 32][edge_right.getY() / 32] = 0;
-                    BombermanGame.listKill[edge_right.getX() / 32][edge_right.getY() / 32] = 0;
+                    id_objects[edge_right.getX() / 32][edge_right.getY() / 32] = 0;
+                    list_kill[edge_right.getX() / 32][edge_right.getY() / 32] = 0;
                 }
 
                 if (is_middle) {
                     Entity e;
                     Iterator var1;
-                    for(var1 = list_bomb_middle_width.iterator(); var1.hasNext(); BombermanGame.idObjects[e.getX() / 32][e.getY() / 32] = 0) {
+                    for(var1 = list_bomb_middle_width.iterator(); var1.hasNext(); id_objects[e.getX() / 32][e.getY() / 32] = 0) {
                         e = (Entity)var1.next();
-                        BombermanGame.listKill[e.getX() / 32][e.getY() / 32] = 0;
+                        list_kill[e.getX() / 32][e.getY() / 32] = 0;
                     }
 
-                    for(var1 = list_bomb_middle_height.iterator(); var1.hasNext(); BombermanGame.idObjects[e.getX() / 32][e.getY() / 32] = 0) {
+                    for(var1 = list_bomb_middle_height.iterator(); var1.hasNext(); id_objects[e.getX() / 32][e.getY() / 32] = 0) {
                         e = (Entity)var1.next();
-                        BombermanGame.listKill[e.getX() / 32][e.getY() / 32] = 0;
+                        list_kill[e.getX() / 32][e.getY() / 32] = 0;
                     }
                 }
 
-                BombermanGame.block.removeAll(list_bomb_middle_height);
-                BombermanGame.block.removeAll(list_bomb_middle_width);
+                block.removeAll(list_bomb_middle_height);
+                block.removeAll(list_bomb_middle_width);
                 list_bomb_middle_height.clear();
                 list_bomb_middle_width.clear();
                 is_edge = false;

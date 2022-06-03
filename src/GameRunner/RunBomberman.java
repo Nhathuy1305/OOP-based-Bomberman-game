@@ -24,6 +24,8 @@ import java.util.List;
 
 import static Entity.block.Portal.*;
 import static Features.SoundManager.updateSound;
+import static Control.Menu.*;
+import static Levels.NextLevel.*;
 
 public class RunBomberman extends Application {
     /**
@@ -134,7 +136,7 @@ public class RunBomberman extends Application {
             a.setCountToRun(a.getCountToRun() + 1);
             if (a.getCountToRun() == 8) {
                 Move.checkRun(a);
-                a.setCountToRun();
+                a.setCountToRun(0);
             }
         }
 
@@ -143,7 +145,7 @@ public class RunBomberman extends Application {
             block.add(portal);
             if (player.getX() / 32 == portal.getX() / 32 && player.getY() / 32 == portal.getY() / 32) {
                 wait = true;
-                waitingTime = System.currentTimeMillis();
+                waiting_time = System.currentTimeMillis();
             }
         }
         waitToLevelUp();

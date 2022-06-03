@@ -24,15 +24,15 @@ public class Ballom extends Animal {
     private void killBallom(Animal animal) {    //Bomber destroys Balloon
         if (count_kill % 16 == 0) {
             if (swap_kill == 1) {
-                animal.setImg(Sprite.mob_dead1.getFxImage());
+                animal.setImg(Sprite.mob_dead_1.getFxImage());
                 swap_kill = 2;
             } 
             else if (swap_kill == 2) {
-                animal.setImg(Sprite.mob_dead2.getFxImage());
+                animal.setImg(Sprite.mob_dead_2.getFxImage());
                 swap_kill = 3;
             } 
             else if (swap_kill == 3) {
-                animal.setImg(Sprite.mob_dead3.getFxImage());
+                animal.setImg(Sprite.mob_dead_3.getFxImage());
                 swap_kill = 4;
             } 
             else {

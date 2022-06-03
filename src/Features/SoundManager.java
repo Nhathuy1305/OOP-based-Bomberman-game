@@ -5,6 +5,9 @@ import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
 
+import static GameRunner.RunBomberman.player;
+import static Levels.NextLevel.wait;
+
 public class SoundManager extends JFrame{
     public static Clip title_screen;
     public static Clip bomb_explosion;

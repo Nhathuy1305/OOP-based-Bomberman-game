@@ -36,7 +36,7 @@ public class Doll extends Animal{
                 animal.setImg(Sprite.doll_dead.getFxImage());
                 swap_kill = 2;
             } else if (swap_kill == 2) {
-                animal.setImg(Sprite.player_dead3.getFxImage());
+                animal.setImg(Sprite.player_dead_3.getFxImage());
                 swap_kill = 3;
             } else {
                 animal.setLife(false);
@@ -61,7 +61,7 @@ public class Doll extends Animal{
 
             for (int i = 0; i < height; i++) {
                 for (int j = 0; j < width; j++) {
-                    if (id_ojects[j][i] != 0) {
+                    if (id_objects[j][i] != 0) {
                         blocks_in_array[count_block][0] = i;
                         blocks_in_array[count_block][1] = j;
                         count_block++;

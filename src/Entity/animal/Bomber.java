@@ -24,22 +24,22 @@ public class Bomber extends Animal {
     private void killBomber(Animal animal) {
         if (count_kill % 16 == 0) {
             if (swap_kill == 1) {
-                animal.setImg(Sprite.player_dead1.getFxImage());
+                animal.setImg(Sprite.player_dead_1.getFxImage());
                 swap_kill = 2;
             } 
             else if (swap_kill == 2) {
-                animal.setImg(Sprite.player_dead2.getFxImage());
+                animal.setImg(Sprite.player_dead_2.getFxImage());
                 swap_kill = 3;
             } 
             else if (swap_kill == 3) {
-                animal.setImg(Sprite.player_dead3.getFxImage());
+                animal.setImg(Sprite.player_dead_3.getFxImage());
                 swap_kill = 4;
             } 
             else {
                 animal.setImg(Sprite.transparent.getFxImage());
                 running = false;
                 Image gameOver = new Image("images/gameOver.png");
-                authorView.setImage(gameOver);
+                author_view.setImage(gameOver);
             }
         }
     }

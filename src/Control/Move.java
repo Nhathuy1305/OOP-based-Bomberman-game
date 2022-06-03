@@ -59,61 +59,61 @@ public class Move {
     private static void down_step(Animal animal) {
         if (animal instanceof Bomber && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.player_down.getFxImage());
+                animal.setImg(Sprite.control_down.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.player_down_1.getFxImage());
+                animal.setImg(Sprite.control_down_1.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.player_down.getFxImage());
+                animal.setImg(Sprite.control_down.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.player_down_2.getFxImage());
+                animal.setImg(Sprite.control_down_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Ballom && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.ballom_right1.getFxImage());
+                animal.setImg(Sprite.ballom_right_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.ballom_right2.getFxImage());
+                animal.setImg(Sprite.ballom_right_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.ballom_right3.getFxImage());
+                animal.setImg(Sprite.ballom_right_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.ballom_right2.getFxImage());
+                animal.setImg(Sprite.ballom_right_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Oneal && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.oneal_right1.getFxImage());
+                animal.setImg(Sprite.oneal_right_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.oneal_right2.getFxImage());
+                animal.setImg(Sprite.oneal_right_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.oneal_right3.getFxImage());
+                animal.setImg(Sprite.oneal_right_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.oneal_right2.getFxImage());
+                animal.setImg(Sprite.oneal_right_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Doll && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.doll_left1.getFxImage());
+                animal.setImg(Sprite.doll_left_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.doll_left2.getFxImage());
+                animal.setImg(Sprite.doll_left_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.doll_left3.getFxImage());
+                animal.setImg(Sprite.doll_left_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.doll_left2.getFxImage());
+                animal.setImg(Sprite.doll_left_2.getFxImage());
                 animal.setSwap(1);
             }
         }
@@ -138,61 +138,61 @@ public class Move {
     private static void up_step(Animal animal) {
         if (animal instanceof Bomber && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.player_up.getFxImage());
+                animal.setImg(Sprite.control_up.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.player_up_1.getFxImage());
+                animal.setImg(Sprite.control_up_1.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.player_up.getFxImage());
+                animal.setImg(Sprite.control_up.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.player_up_2.getFxImage());
+                animal.setImg(Sprite.control_up_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Ballom && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.ballom_left1.getFxImage());
+                animal.setImg(Sprite.ballom_left_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.ballom_left2.getFxImage());
+                animal.setImg(Sprite.ballom_left_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.ballom_left3.getFxImage());
+                animal.setImg(Sprite.ballom_left_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.ballom_left2.getFxImage());
+                animal.setImg(Sprite.ballom_left_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Oneal && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.oneal_left1.getFxImage());
+                animal.setImg(Sprite.oneal_left_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.oneal_left2.getFxImage());
+                animal.setImg(Sprite.oneal_left_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.oneal_left3.getFxImage());
+                animal.setImg(Sprite.oneal_left_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.oneal_left2.getFxImage());
+                animal.setImg(Sprite.oneal_left_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Doll && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.doll_right1.getFxImage());
+                animal.setImg(Sprite.doll_right_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.doll_right2.getFxImage());
+                animal.setImg(Sprite.doll_right_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.doll_right3.getFxImage());
+                animal.setImg(Sprite.doll_right_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.doll_right2.getFxImage());
+                animal.setImg(Sprite.doll_right_2.getFxImage());
                 animal.setSwap(1);
             }
         }
@@ -218,76 +218,76 @@ public class Move {
     private static void left_step(Animal animal) {
         if (animal instanceof Bomber && animal.getX() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.player_left.getFxImage());
+                animal.setImg(Sprite.control_left.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.player_left_1.getFxImage());
+                animal.setImg(Sprite.control_left_1.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.player_left.getFxImage());
+                animal.setImg(Sprite.control_left.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.player_left_2.getFxImage());
+                animal.setImg(Sprite.control_left_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Ballom && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.ballom_right1.getFxImage());
+                animal.setImg(Sprite.ballom_right_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.ballom_right2.getFxImage());
+                animal.setImg(Sprite.ballom_right_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.ballom_right3.getFxImage());
+                animal.setImg(Sprite.ballom_right_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.ballom_right2.getFxImage());
+                animal.setImg(Sprite.ballom_right_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Oneal && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.oneal_right1.getFxImage());
+                animal.setImg(Sprite.oneal_right_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.oneal_right2.getFxImage());
+                animal.setImg(Sprite.oneal_right_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.oneal_right3.getFxImage());
+                animal.setImg(Sprite.oneal_right_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.oneal_right2.getFxImage());
+                animal.setImg(Sprite.oneal_right_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Doll && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.doll_left1.getFxImage());
+                animal.setImg(Sprite.doll_left_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.doll_left2.getFxImage());
+                animal.setImg(Sprite.doll_left_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.doll_left3.getFxImage());
+                animal.setImg(Sprite.doll_left_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.doll_left2.getFxImage());
+                animal.setImg(Sprite.doll_left_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Kondoria && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.kondoria_left1.getFxImage());
+                animal.setImg(Sprite.kondoria_left_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.kondoria_left2.getFxImage());
+                animal.setImg(Sprite.kondoria_left_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.kondoria_left3.getFxImage());
+                animal.setImg(Sprite.kondoria_left_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.kondoria_left2.getFxImage());
+                animal.setImg(Sprite.kondoria_left_2.getFxImage());
                 animal.setSwap(1);
             }
         }
@@ -313,77 +313,77 @@ public class Move {
     public static void right_step(Animal animal) {
         if (animal instanceof Bomber && animal.getX() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.player_right.getFxImage());
+                animal.setImg(Sprite.control_right.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.player_right_1.getFxImage());
+                animal.setImg(Sprite.control_right_1.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.player_right.getFxImage());
+                animal.setImg(Sprite.control_right.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.player_right_2.getFxImage());
+                animal.setImg(Sprite.control_right_2.getFxImage());
                 animal.setSwap(1);
             }
         }
 
         if (animal instanceof Ballom && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.ballom_left1.getFxImage());
+                animal.setImg(Sprite.ballom_left_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.ballom_left2.getFxImage());
+                animal.setImg(Sprite.ballom_left_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.ballom_left3.getFxImage());
+                animal.setImg(Sprite.ballom_left_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.ballom_left2.getFxImage());
+                animal.setImg(Sprite.ballom_left_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Oneal && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.oneal_left1.getFxImage());
+                animal.setImg(Sprite.oneal_left_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.oneal_left2.getFxImage());
+                animal.setImg(Sprite.oneal_left_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.oneal_left3.getFxImage());
+                animal.setImg(Sprite.oneal_left_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.oneal_left2.getFxImage());
+                animal.setImg(Sprite.oneal_left_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Doll && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.doll_right1.getFxImage());
+                animal.setImg(Sprite.doll_right_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.doll_right2.getFxImage());
+                animal.setImg(Sprite.doll_right_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.doll_right3.getFxImage());
+                animal.setImg(Sprite.doll_right_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.doll_right2.getFxImage());
+                animal.setImg(Sprite.doll_right_2.getFxImage());
                 animal.setSwap(1);
             }
         }
         if (animal instanceof Kondoria && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
-                animal.setImg(Sprite.kondoria_right1.getFxImage());
+                animal.setImg(Sprite.kondoria_right_1.getFxImage());
                 animal.setSwap(2);
             } else if (animal.getSwap() == 2) {
-                animal.setImg(Sprite.kondoria_right2.getFxImage());
+                animal.setImg(Sprite.kondoria_right_2.getFxImage());
                 animal.setSwap(3);
             } else if (animal.getSwap() == 3) {
-                animal.setImg(Sprite.kondoria_right3.getFxImage());
+                animal.setImg(Sprite.kondoria_right_3.getFxImage());
                 animal.setSwap(4);
             } else {
-                animal.setImg(Sprite.kondoria_right2.getFxImage());
+                animal.setImg(Sprite.kondoria_right_2.getFxImage());
                 animal.setSwap(1);
             }
         }

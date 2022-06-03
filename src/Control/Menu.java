@@ -8,11 +8,14 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
+import Levels.*;
+
+import static GameRunner.RunBomberman.*;
 
 public class Menu {
     private static ImageView statusGame;
     public static Text level, bomb, time;
-    public static int bombNumber = 20, timeNumber = 120;
+    public static int bomb_number = 20, time_number = 120;
 
     public static void createMenu(Group root) { //Create a menu
         level = new Text("Level: 1");
@@ -60,7 +63,7 @@ public class Menu {
 
     public static void updateMenu() { //Update menu
         level.setText("Level: " + level);
-        bomb.setText("Bombs: " + bombNumber);
+        bomb.setText("Bombs: " + bomb_number);
 
         if (player.isLife())
             if (running) {

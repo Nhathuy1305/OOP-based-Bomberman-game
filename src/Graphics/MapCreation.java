@@ -3,6 +3,11 @@ package Graphics;
 // Import class
 import Entity.Entity;
 import Entity.block.Brick;
+import Entity.block.Portal;
+import Entity.block.Wall;
+import Entity.block.Grass;
+
+import static GameRunner.RunBomberman.*;
 
 // Import library
 import java.io.File;
@@ -14,7 +19,7 @@ import java.util.StringTokenizer; // The java.util.StringTokenizer class allows 
 public class MapCreation {
     // Constructor MapCreation with parameter "level" in string data type.
     public MapCreation(String level) {
-        System.out.println(System.getProperty(key:"user.dir"));
+        System.out.println(System.getProperty("user.dir"));
         final File fileName = new File(level);                      // Create object fileName from class File in File library imported.
         try (FileReader inputFile = new FileReader(fileName)) {     // Try to create new object from class FileReader.
             Scanner ip = new Scanner(inputFile);                    // Create object ip from class Scanner.

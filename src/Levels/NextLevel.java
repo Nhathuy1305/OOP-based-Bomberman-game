@@ -1,9 +1,10 @@
+package Levels;
 
 import javafx.scene.image.Image;
 
-import static BombermanGame._level;
-import static BombermanGame.author_view;
-import static entities.block.Portal.is_portal;
+import static GameRunner.RunBomberman.level;
+import static GameRunner.RunBomberman.author_view;
+import static Entity.block.Portal.is_portal;
 
 public class NextLevel {
     public static boolean wait;
@@ -17,7 +18,7 @@ public class NextLevel {
             // load next Level
             long now = System.currentTimeMillis();
             if (now - waiting_time > 3000) {
-                switch (_level) {
+                switch(level) {
                     case 1:
                         is_portal = false;
                         new Level2();

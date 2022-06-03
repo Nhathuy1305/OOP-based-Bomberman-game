@@ -8,6 +8,7 @@ import Entity.block.Wall;
 import Entity.block.Grass;
 import Entity.items.FlameItem;
 import Entity.items.SpeedItem;
+import GameRunner.RunBomberman;
 
 import static GameRunner.RunBomberman.*;
 
@@ -30,13 +31,13 @@ public class MapCreation {
             StringTokenizer tokens = new StringTokenizer(line);     // Create object tokens from class StringTokenizer in library imported.
 
             // parseInt(): Method that parses the string argument and returns a primitive int.
-            level = Integer.parseInt(tokens.nextToken());
+            RunBomberman.level = Integer.parseInt(tokens.nextToken());   // To refer to variable level in main file.
             height = Integer.parseInt(tokens.nextToken());
             width = Integer.parseInt(tokens.nextToken());
 
             while (ip.hasNextLine()) {
-                id_objects = new int[width][height];                 //
-                list_kill = new int[width][height];                  //
+                id_objects = new int[width][height];                 // Create new object id_object from main file.
+                list_kill = new int[width][height];                  // Create new object lít_kill from main file.   Main file: RunBomberman.java
                 for (int i = 0; i < height; ++i) {
                     String lineTile = ip.nextLine();                // Input variable lineTile in string data type.
                     StringTokenizer tokenTile = new StringTokenizer(lineTile);      // Create object tokenTile from class StringTokenizer in library imported.

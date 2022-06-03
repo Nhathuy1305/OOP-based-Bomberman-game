@@ -2,6 +2,9 @@ import Control.Menu;
 import Control.Move;
 import Entity.Entity;
 import Entity.animal.Animal;
+import Entity.animal.Bomber;
+import Graphics.Sprite;
+import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -9,7 +12,6 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import Graphics.Sprite;
 import javafx.scene.canvas.Canvas;
 
 
@@ -84,10 +86,86 @@ public class RunBomberman extends Application {
             }
         });
 
+        stage.setScene(scene);
+        stage.setTitle("Bomberman by 404 NOT FOUND");
+        Image icon = new Image("images/ttsalpha4.0@0.5x.png");
+        stage.getIcons().add(icon);
+        main_stage = stage;
+        main_stage.show();
 
+        last_time = System.currentTimeMillis();
+
+        AnimationTimer timer = new AnimationTimer() {
+            @Override
+            public void handle(long l) {
+                if (running) {
+                    render();
+                    update();
+                    time();
+                    updateMenu();
+                }
+            }
+        };
+        timer.start();
+
+        player = new Bomber(1, 1, Sprite.control_right_2.getFxImage());
+        player.setLife(false);
     }
 
+    public void update() {
+        block.forEach(Entity::update);
+        enemy.forEach(Entity::update);
+        player.update();
 
+        player.setCountToRun(player.getCountToRun() + 1);
+        if (player.getCountToRun() == 4) {
+            Move.checkRun(player);
+            player.setCountToRun(0);
+        }
+
+        for (Animal a : enemy) {
+            a.setCountToRun(a.getCountToRun() + 1);
+            if (a.getCountToRun() == 8) {
+                Move.checkRun(a);
+                a.setCountToRun();
+            }
+        }
+
+        if (enemy.size() == 0 && !is_portal && ! wait) {
+            Entity portal = new Portal(width - 2, height - 2, Sprite.portal.getFxImage());
+            block.add(portal);
+            if (player.getX() / 32 == portal.getX() / 32 && player.getY() / 32 == portal.getY() / 32) {
+                wait = true;
+                waitingTime = System.currentTimeMillis();
+            }
+        }
+        waitToLevelUp();
+        updateSound();
+    }
+
+    public void render() {
+        gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
+        block.forEach(g -> g.render(gc));
+        enemy.forEach(g -> g.render(gc));
+        player.render(gc);
+    }
+
+    public void time() {
+        frame++;
+
+        long now = System.currentTimeMillis();
+        if (now - last_time > 1000) {
+            last_time = System.currentTimeMillis();
+            main_stage.setTitle("Bomberman by 404 NOT FOUND | " + frame + " frame");
+            frame = 0;
+
+            time.setText("Time: " + time_number);
+            time_number--;
+            if (time_number < 0) {
+                player.setLife(false);
+            }
+        }
+    }
 
     public static void main(String[] args) {
         Application.launch(RunBomberman.class);

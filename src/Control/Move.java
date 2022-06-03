@@ -3,7 +3,7 @@ package Control;
 import Entity.animal.*;
 import Graphics.Sprite;
 
-// import static Entity.
+import static Entity.items.SpeedItem.speed;
 
 public class Move {
     public static void checkRun(Animal animal) {    //Check if all your mob move or not

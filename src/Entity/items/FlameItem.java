@@ -1,10 +1,11 @@
+package Entity.items;
 
 import javafx.scene.image.Image;
-import entities.Entity;
-import entities.block.Bomb;
-import graphics.Sprite;
+import Entity.Entity;
+import Entity.block.Bomb;
+import Graphics.Sprite;
 
-import static BombermanGame.*;
+import static GameRunner.RunBomberman.*;
 
 public class FlameItem extends Items {
 

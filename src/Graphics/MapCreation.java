@@ -6,6 +6,8 @@ import Entity.block.Brick;
 import Entity.block.Portal;
 import Entity.block.Wall;
 import Entity.block.Grass;
+import Entity.items.FlameItem;
+import Entity.items.SpeedItem;
 
 import static GameRunner.RunBomberman.*;
 

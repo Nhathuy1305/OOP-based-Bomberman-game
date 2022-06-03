@@ -14,7 +14,7 @@ import static Control.Menu.bomb_number;
 import static Control.Menu.time_number;
 import static Entity.animal.Bomber.swap_kill;
 import static Entity.block.Bomb.is_bomb;
-//import static Entity.item.SpeedItem.speed;
+import static Entity.items.SpeedItem.speed;
 import static Features.SoundManager.is_sound_died;
 import static Features.SoundManager.is_sound_title;
 

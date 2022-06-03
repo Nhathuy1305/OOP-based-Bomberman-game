@@ -1,8 +1,5 @@
 package control;
 
-import Graphics.Sprite;
-import Entity.animal;
-
 public class Move {
     public static void checkRun(Animal animal) { //Check if all your mob move or not
         if (animal instanceof Bomber && animal.getCount() > 0) {

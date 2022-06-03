@@ -9,8 +9,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
-import Level;
-
 public class Menu {
     private static ImageView status_game;
     public static Text level, bomb, time;

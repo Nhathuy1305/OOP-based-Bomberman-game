@@ -15,7 +15,7 @@ import static GameRunner.RunBomberman.*;
 public class Menu {
     private static ImageView statusGame;
     public static Text level, bomb, time;
-    public static int bomb_number = 20, time_number = 120;
+    public static int bomb_number = 20, time_number = 120;   // the number of bomb is 20 and the time limit is 120 seconds
 
     public static void createMenu(Group root) { //Create a menu
         level = new Text("Level: 1");
@@ -49,7 +49,7 @@ public class Menu {
 
         root.getChildren().add(pane);
 
-        statusGame.setOnMouseClicked(event -> {
+        statusGame.setOnMouseClicked(event -> {     //Event when you click the play game button, if your character still alive, the game will pause, else the game will start at level 1
             if (player.isLife()) {
                 running = !running;
             } else {

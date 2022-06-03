@@ -128,24 +128,24 @@ public class Bomb extends Entity {
     }
 
     public static void createMiddle() {     // Adjust the bomb to explode at the center position
-        Bomb middle;
+        Entity middle;
         int i;
-        for(i = 1; i <= power_bomb_down; ++i) {
+        for(i = 1; i <= power_bomb_down; i++) {
             middle = new Bomb(bomb.getX() / 32, bomb.getY() / 32 + i, Sprite.bomb_exploded.getFxImage());
             list_bomb_middle_height.add(middle);
         }
 
-        for(i = 1; i <= power_bomb_up; ++i) {
+        for(i = 1; i <= power_bomb_up; i++) {
             middle = new Bomb(bomb.getX() / 32, bomb.getY() / 32 - i, Sprite.bomb_exploded.getFxImage());
             list_bomb_middle_height.add(middle);
         }
 
-        for(i = 1; i <= power_bomb_left; ++i) {
+        for(i = 1; i <= power_bomb_left; i++) {
             middle = new Bomb(bomb.getX() / 32 - i, bomb.getY() / 32, Sprite.bomb_exploded.getFxImage());
             list_bomb_middle_width.add(middle);
         }
 
-        for(i = 1; i <= power_bomb_right; ++i) {
+        for(i = 1; i <= power_bomb_right; i++) {
             middle = new Bomb(bomb.getX() / 32 + i, bomb.getY() / 32, Sprite.bomb_exploded.getFxImage());
             list_bomb_middle_width.add(middle);
         }
@@ -179,16 +179,16 @@ public class Bomb extends Entity {
             }
 
             if (list_bomb_middle_height.size() > 0) {
-                for(var1 = list_bomb_middle_height.iterator(); var1.hasNext(); list_kill[e.getX() / 32][e.getY() / 32] = 4) {
-                    e = (Entity)var1.next();
+                for (Entity e : list_bomb_middle_height) {
                     e.setImg(Sprite.explosion_vertical.getFxImage());
+                    list_kill[e.getX() / 32][e.getY() / 32] = 4;
                 }
             }
 
             if (list_bomb_middle_width.size() > 0) {
-                for(var1 = list_bomb_middle_width.iterator(); var1.hasNext(); list_kill[e.getX() / 32][e.getY() / 32] = 4) {
-                    e = (Entity)var1.next();
+                for (Entity e : list_bomb_middle_width) {
                     e.setImg(Sprite.explosion_horizontal.getFxImage());
+                    list_kill[e.getX() / 32][e.getY() / 32] = 4;
                 }
             }
 
@@ -213,17 +213,10 @@ public class Bomb extends Entity {
             }
 
             if (is_middle) {
-                var1 = list_bomb_middle_height.iterator();
-
-                while(var1.hasNext()) {
-                    e = (Entity)var1.next();
+                for (Entity e : list_bomb_middle_height) {
                     e.setImg(Sprite.explosion_vertical_1.getFxImage());
                 }
-
-                var1 = list_bomb_middle_width.iterator();
-
-                while(var1.hasNext()) {
-                    e = (Entity)var1.next();
+                for (Entity e : list_bomb_middle_width) {
                     e.setImg(Sprite.explosion_horizontal_1.getFxImage());
                 }
             }
@@ -249,17 +242,10 @@ public class Bomb extends Entity {
             }
 
             if (is_middle) {
-                var1 = list_bomb_middle_height.iterator();
-
-                while(var1.hasNext()) {
-                    e = (Entity)var1.next();
+                for (Entity e : list_bomb_middle_height) {
                     e.setImg(Sprite.explosion_vertical_2.getFxImage());
                 }
-
-                var1 = list_bomb_middle_width.iterator();
-
-                while(var1.hasNext()) {
-                    e = (Entity)var1.next();
+                for (Entity e : list_bomb_middle_width) {
                     e.setImg(Sprite.explosion_horizontal_2.getFxImage());
                 }
             }
@@ -335,16 +321,13 @@ public class Bomb extends Entity {
                 }
 
                 if (is_middle) {
-                    Entity e;
-                    Iterator var1;
-                    for(var1 = list_bomb_middle_width.iterator(); var1.hasNext(); id_objects[e.getX() / 32][e.getY() / 32] = 0) {
-                        e = (Entity)var1.next();
+                    for (Entity e : list_bomb_middle_width) {
                         list_kill[e.getX() / 32][e.getY() / 32] = 0;
+                        id_objects[e.getX() / 32][e.getY() / 32] = 0;
                     }
-
-                    for(var1 = list_bomb_middle_height.iterator(); var1.hasNext(); id_objects[e.getX() / 32][e.getY() / 32] = 0) {
-                        e = (Entity)var1.next();
+                    for (Entity e : list_bomb_middle_height) {
                         list_kill[e.getX() / 32][e.getY() / 32] = 0;
+                        id_objects[e.getX() / 32][e.getY() / 32] = 0;
                     }
                 }
 

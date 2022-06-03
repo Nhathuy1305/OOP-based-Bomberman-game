@@ -14,31 +14,31 @@ import static GameRunner.RunBomberman.player;
 import static Control.Menu.bomb_number;
 
 public class Bomb extends Entity {
-    private static long time_bomb;
-    private static long time_tmp;
-    private static Entity bomb;
-    private static int swap_active = 1;
-    private static int swap_explosion = 1;
+    private static long time_bomb;      // Exploding time bomb 
+    private static long time_tmp;       // Time between 2 bombings
+    private static Entity bomb;         
+    private static int swap_active = 1;     // Change the operational state of the bomb
+    private static int swap_explosion = 1;  // Change bomb's explosive state
     private static final List<Entity> list_bomb_middle_width = new ArrayList();
     private static final List<Entity> list_bomb_middle_height = new ArrayList();
-    public static int power_bomb = 0;
-    private static int power_bomb_down = 0;
-    private static int power_bomb_up = 0;
-    private static int power_bomb_left = 0;
-    private static int power_bomb_right = 0;
-    private static Entity edge_down = null;
-    private static Entity edge_up = null;
-    private static Entity edge_left = null;
-    private static Entity edge_right = null;
-    private static boolean is_edge = false;
-    private static boolean is_middle = false;
-    public static int is_bomb = 0;
+    public static int power_bomb = 0;   // Bomb's destructive power
+    private static int power_bomb_down = 0;     // Bomb's destructive power from top to bottom
+    private static int power_bomb_up = 0;       // The bomb's destructive power is from the bottom up
+    private static int power_bomb_left = 0;     // Bomb's destructive power is from right to left
+    private static int power_bomb_right = 0;    // The explosive power of the bomb is from left to right
+    private static Entity edge_down = null;     // The bottom edge of the block blocks the character from going through
+    private static Entity edge_up = null;       // The up edge of the block blocks the character from going through
+    private static Entity edge_left = null;     // The left edge of the block blocks the character from going through
+    private static Entity edge_right = null;    // The right edge of the block blocks the character from going through
+    private static boolean is_edge = false;     // Check if that edge exists
+    private static boolean is_middle = false;   // Check if the bomb explodes in the center (plus sign, not T )
+    public static int is_bomb = 0;      // Check to see if there's a bomb there: //0 no bomb  //1 had bomb  //2 explosion
 
     public Bomb(int x, int y, Image img) {
         super(x, y, img);
     }
 
-    public static void putBomb() {
+    public static void putBomb() {      // The function used for the bomber to place the bomb
         if (is_bomb == 0 && bomb_number > 0) {
             bomb_number--;
             is_bomb = 1;
@@ -55,7 +55,7 @@ public class Bomb extends Entity {
 
     }
 
-    public static void activeBomb() {
+    public static void activeBomb() {   // Show the animation from the time the bomb is placed to the time it explodes
         if (swap_active == 1) {
             bomb.setImg(Sprite.bomb.getFxImage());
             swap_active = 2;
@@ -75,7 +75,7 @@ public class Bomb extends Entity {
 
     }
 
-    public static void createEdge() {
+    public static void createEdge() {   // Create an egde to prevent the character's movement as well as the explosion range of the bomb
         int i;
         if (Blocked.block_down_bomb(bomb, 0)) {
             edge_down = new Bomb(bomb.getX() / 32, bomb.getY() / 32 + 1, Sprite.bomb_exploded.getFxImage());
@@ -127,7 +127,7 @@ public class Bomb extends Entity {
 
     }
 
-    public static void createMiddle() {
+    public static void createMiddle() {     // Adjust the bomb to explode at the center position
         Bomb middle;
         int i;
         for(i = 1; i <= power_bomb_down; ++i) {
@@ -154,7 +154,7 @@ public class Bomb extends Entity {
         block.addAll(list_bomb_middle_height);
     }
 
-    public static void explosionCenter() {
+    public static void explosionCenter() {      // Determine the explosion center of the bomb 
         if (swap_explosion == 1) {
             bomb.setImg(Sprite.bomb_exploded.getFxImage());
             list_kill[bomb.getX() / 32][bomb.getY() / 32] = 4;
@@ -269,7 +269,7 @@ public class Bomb extends Entity {
 
     }
 
-    private static void checkActive() {
+    private static void checkActive() {     // Check what stages the bomb has gone through before detonating
         if (is_bomb == 1) {
             if (System.currentTimeMillis() - time_bomb < 2000L) {
                 if (System.currentTimeMillis() - time_tmp > 100L) {
@@ -286,7 +286,7 @@ public class Bomb extends Entity {
 
     }
 
-    private static void checkExplosion() {
+    private static void checkExplosion() {      // Check the bomb's detonation time after the bomb is activated
         if (is_bomb == 2) {
             if (System.currentTimeMillis() - time_bomb < 1000L) {
                 if (System.currentTimeMillis() - time_tmp > 100L) {

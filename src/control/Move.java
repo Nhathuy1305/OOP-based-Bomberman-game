@@ -1,7 +1,10 @@
 package control;
 
+import Graphics.Sprite;
+import Entity.animal;
+
 public class Move {
-    public static void checkRun(Animal animal) { //check if 
+    public static void checkRun(Animal animal) { //Check if all your mob move or not
         if (animal instanceof Bomber && animal.getCount() > 0) {
             setDirection(animal.getDirection(), animal, 8 * speed);
             animal.setCount(animal.getCount() - 1);
@@ -14,36 +17,36 @@ public class Move {
         }
     }
 
-    private static void setDirection(String direction, Animal animal, int isMove) {
+    private static void setDirection(String direction, Animal animal, int is_move) { //Show the direction of all mob
         switch (direction) {
             case "down":
-                down_step(animal);
-                animal.setY(animal.getY() + isMove);
+                downStep(animal);
+                animal.setY(animal.getY() + is_move);
                 break;
             case "up":
-                up_step(animal);
-                animal.setY(animal.getY() - isMove);
+                upStep(animal);
+                animal.setY(animal.getY() - is_move);
                 break;
             case "left":
-                left_step(animal);
-                animal.setX(animal.getX() - isMove);
+                leftStep(animal);
+                animal.setX(animal.getX() - is_move);
                 break;
             case "right":
-                right_step(animal);
-                animal.setX(animal.getX() + isMove);
+                rightStep(animal);
+                animal.setX(animal.getX() + is_move);
                 break;
         }
     }
 
-    public static void down(Animal animal) {
+    public static void down(Animal animal) { //Control all mob to go down
         if (animal.getY() % 32 == 0 && animal.getX() % 32 == 0) {
-            if (animal instanceof Bomber && Blocked.block_down(animal)) {
+            if (animal instanceof Bomber && Blocked.blockDown(animal)) {
                 animal.setDirection("down");
                 animal.setCount(4 / speed);
                 checkRun(animal);
             }
             if ((animal instanceof Ballom || animal instanceof Oneal || animal instanceof Doll)
-                    && Blocked.block_down(animal)) {
+                    && Blocked.blockDown(animal)) {
                 animal.setDirection("down");
                 animal.setCount(8);
                 checkRun(animal);
@@ -51,7 +54,7 @@ public class Move {
         }
     }
 
-    private static void down_step(Animal animal) {
+    private static void downStep(Animal animal) { //Show the animation of all mob that go down
         if (animal instanceof Bomber && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
                 animal.setImg(Sprite.player_down.getFxImage());
@@ -114,15 +117,15 @@ public class Move {
         }
     }
 
-    public static void up(Animal animal) {
+    public static void up(Animal animal) { //Control all mob to go up
         if (animal.getY() % 32 == 0 && animal.getX() % 32 == 0) {
-            if (animal instanceof Bomber && Blocked.block_up(animal)) {
+            if (animal instanceof Bomber && Blocked.blockUp(animal)) {
                 animal.setDirection("up");
                 animal.setCount(4 / speed);
                 checkRun(animal);
             }
             if ((animal instanceof Ballom || animal instanceof Oneal || animal instanceof Doll)
-                    && Blocked.block_up(animal)) {
+                    && Blocked.blockUp(animal)) {
                 animal.setDirection("up");
                 animal.setCount(8);
                 checkRun(animal);
@@ -130,7 +133,7 @@ public class Move {
         }
     }
 
-    private static void up_step(Animal animal) {
+    private static void upStep(Animal animal) { //Show the animation of all mob that go down
         if (animal instanceof Bomber && animal.getY() % 8 == 0) {
             if (animal.getSwap() == 1) {
                 animal.setImg(Sprite.player_up.getFxImage());
@@ -193,16 +196,16 @@ public class Move {
         }
     }
 
-    public static void left(Animal animal) {
+    public static void left(Animal animal) { //Control all mob to go left
         if (animal.getX() % 32 == 0 && animal.getY() % 32 == 0) {
-            if (animal instanceof Bomber && Blocked.block_left(animal)) {
+            if (animal instanceof Bomber && Blocked.blockLeft(animal)) {
                 animal.setDirection("left");
                 animal.setCount(4 / speed);
                 checkRun(animal);
             }
             if ((animal instanceof Ballom || animal instanceof Oneal
                     || animal instanceof Doll || animal instanceof Kondoria)
-                    && Blocked.block_left(animal)) {
+                    && Blocked.blockLeft(animal)) {
                 animal.setDirection("left");
                 animal.setCount(8);
                 checkRun(animal);
@@ -210,7 +213,7 @@ public class Move {
         }
     }
 
-    private static void left_step(Animal animal) {
+    private static void leftStep(Animal animal) { //Show the animation of all mob that go left
         if (animal instanceof Bomber && animal.getX() % 8 == 0) {
             if (animal.getSwap() == 1) {
                 animal.setImg(Sprite.player_left.getFxImage());
@@ -288,16 +291,16 @@ public class Move {
         }
     }
 
-    public static void right(Animal animal) {
+    public static void right(Animal animal) { //Control all mob to go right
         if (animal.getX() % 32 == 0 && animal.getY() % 32 == 0) {
-            if (animal instanceof Bomber && Blocked.block_right(animal)) {
+            if (animal instanceof Bomber && Blocked.blockRight(animal)) {
                 animal.setDirection("right");
                 animal.setCount(4 / speed);
                 checkRun(animal);
             }
             if ((animal instanceof Ballom || animal instanceof Oneal
                     || animal instanceof Doll || animal instanceof Kondoria)
-                    && Blocked.block_right(animal)) {
+                    && Blocked.blockRight(animal)) {
                 animal.setDirection("right");
                 animal.setCount(8);
                 checkRun(animal);
@@ -305,7 +308,7 @@ public class Move {
         }
     }
 
-    public static void right_step(Animal animal) {
+    public static void rightStep(Animal animal) { //Show the animation of all mob that go right
         if (animal instanceof Bomber && animal.getX() % 8 == 0) {
             if (animal.getSwap() == 1) {
                 animal.setImg(Sprite.player_right.getFxImage());

@@ -1,8 +1,10 @@
 import Control.Menu;
+import Control.Move;
 import Entity.Entity;
 import Entity.animal.Animal;
 import javafx.application.Application;
 import javafx.scene.Group;
+import javafx.scene.Scene;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -57,6 +59,32 @@ public class RunBomberman extends Application {
         Menu.createMenu(root);
         root.getChildren().add(canvas);
         root.getChildren().add(author_view);
+
+        Scene scene = new Scene(root);
+
+        scene.setOnKeyPressed(event -> {
+            if (player.isLife()) {
+                switch (event.getCode()) {
+                    case UP:
+                        Move.up(player);
+                        break;
+                    case DOWN:
+                        Move.down(player);
+                        break;
+                    case RIGHT:
+                        Move.right(player);
+                        break;
+                    case LEFT:
+                        Move.left(player);
+                        break;
+                    case SPACE:
+                        Bomb.putBomb();
+                        break;
+                }
+            }
+        });
+
+
     }
 
 

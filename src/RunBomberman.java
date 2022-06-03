@@ -59,6 +59,8 @@ public class RunBomberman extends Application {
         root.getChildren().add(author_view);
     }
 
+
+
     public static void main(String[] args) {
         Application.launch(RunBomberman.class);
     }

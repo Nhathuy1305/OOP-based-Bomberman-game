@@ -1,7 +1,7 @@
 package Entity.animal;
 
 import javafx.scene.image.Image;
-import Entity.animal.Animal;
+import Graphics.Sprite;
 
 public class Bomber extends Animal {
     public static int swap_kill = 1;
@@ -43,7 +43,7 @@ public class Bomber extends Animal {
     }
 
     private void checkBombs() {
-        if (listKill[player.getX() / 32][player.getY() / 32] == 4)
+        if (list_kill[player.getX() / 32][player.getY() / 32] == 4)
             player.setLife(false);
     }
 

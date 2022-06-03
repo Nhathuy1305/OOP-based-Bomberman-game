@@ -1,5 +1,6 @@
 package Entity;
 
+import Graphics.Sprite;
 import javafx.scene.canvas.GraphicsContext;
 
 public abstract class Entity {

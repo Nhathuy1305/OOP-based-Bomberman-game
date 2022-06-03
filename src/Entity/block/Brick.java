@@ -2,7 +2,8 @@ package Entity.block;
 
 import javafx.scene.image.Image;
 import Entity.Entity;
-import BombermanGame.block;
+import Graphics.Sprite;
+
 
 public class Brick extends Entity {
 
@@ -13,7 +14,7 @@ public class Brick extends Entity {
     private void checkHidden() {    //Check Brick's Visibility
         for (Entity entity : block) {
             if (entity instanceof Brick)
-                if (list_kill[entity.getX() / 32][entity.getY() / 32] == 4) {    //At the element of the 2-dimensional listKill array with the value 4, Brick and Grass will appear
+                if (list_kill[entity.getX() / 32][entity.getY() / 32] == 4) {    // At the element of the 2-dimensional listKill array with the value 4, Brick and Grass will appear
                     entity.setImg(Sprite.grass.getFxImage());
                 }
         }

@@ -1,7 +1,8 @@
 package Entity.animal;
 
+import Control.Move;
 import javafx.scene.image.Image;
-import Entity.animal.Animal;
+import Graphics.Sprite;
 
 public class Kondoria extends Animal {
 

@@ -3,6 +3,8 @@ package Entity.animal;
 import javafx.scene.image.Image;
 import Graphics.Sprite;
 
+import static GameRunner.RunBomberman.*;
+
 public class Bomber extends Animal {
     public static int swap_kill = 1;
     private static int count_kill = 0;

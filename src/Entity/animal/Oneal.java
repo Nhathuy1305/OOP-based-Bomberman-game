@@ -2,6 +2,9 @@ package Entity.animal;
 
 import Control.Move;
 import Graphics.Sprite;
+import javafx.scene.image.Image;
+
+import static GameRunner.RunBomberman.*;
 
 public class Oneal extends Animal {
     private static int swap_kill = 1;

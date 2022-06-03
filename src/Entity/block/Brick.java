@@ -4,6 +4,8 @@ import javafx.scene.image.Image;
 import Entity.Entity;
 import Graphics.Sprite;
 
+import static GameRunner.RunBomberman.list_kill;
+import static GameRunner.RunBomberman.block;
 
 public class Brick extends Entity {
 

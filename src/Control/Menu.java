@@ -9,7 +9,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
-
 public class Menu {
     private static ImageView statusGame;
     public static Text level, bomb, time;
@@ -60,7 +59,7 @@ public class Menu {
     }
 
     public static void updateMenu() { //Update menu
-        level.setText("Level: " + _level);
+        level.setText("Level: " + level);
         bomb.setText("Bombs: " + bombNumber);
 
         if (player.isLife())

@@ -1,5 +1,10 @@
 package Control;
 
+import Entity.animal.*;
+import Graphics.Sprite;
+
+// import static Entity.
+
 public class Move {
     public static void checkRun(Animal animal) { //check if 
         if (animal instanceof Bomber && animal.getCount() > 0) {

@@ -4,6 +4,8 @@ import Control.Move;
 import javafx.scene.image.Image;
 import Graphics.Sprite;
 
+import static GameRunner.RunBomberman.*;
+
 public class Kondoria extends Animal {
 
     private static int swap_kill = 1;

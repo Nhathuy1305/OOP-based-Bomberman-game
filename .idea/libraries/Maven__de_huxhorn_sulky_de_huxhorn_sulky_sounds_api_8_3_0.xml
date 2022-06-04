@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: de.huxhorn.sulky:de.huxhorn.sulky.sounds-api:8.3.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/huxhorn/sulky/de.huxhorn.sulky.sounds-api/8.3.0/de.huxhorn.sulky.sounds-api-8.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/de/huxhorn/sulky/de.huxhorn.sulky.sounds-api/8.3.0/de.huxhorn.sulky.sounds-api-8.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/huxhorn/sulky/de.huxhorn.sulky.sounds-api/8.3.0/de.huxhorn.sulky.sounds-api-8.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

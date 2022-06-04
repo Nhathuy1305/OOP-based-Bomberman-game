@@ -1,5 +1,6 @@
 package Control;
 
+import GameRunner.RunBomberman;
 import javafx.scene.Group;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -62,7 +63,7 @@ public class Menu {
     }
 
     public static void updateMenu() { //Update menu
-        level.setText("Level: " + level);
+        level.setText("Level: " + RunBomberman.level);
         bomb.setText("Bombs: " + bomb_number);
 
         if (player.isLife())

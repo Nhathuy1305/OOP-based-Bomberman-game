@@ -14,9 +14,9 @@ public class Sprite {
     private SpriteSheet sheet;
 
     private void load() {
-        for (int i = 0; i < SIZE; i++) {
-            for (int j = 0; j < SIZE; j++) {
-                pixels[i + j * SIZE] = sheet.sprite_pixels[(x + x) + (y + y) * sheet.SIZE];
+        for (int y = 0; y < SIZE; y++) {
+            for (int x = 0; x < SIZE; x++) {
+                pixels[x + y * SIZE] = sheet.sprite_pixels[(x + this.x) + (y + this.y) * this.sheet.SIZE];
             }
         }
     }
@@ -197,12 +197,12 @@ public class Sprite {
     public Image getFxImage() {
         WritableImage wr = new WritableImage(SIZE, SIZE);
         PixelWriter pw = wr.getPixelWriter();
-        for (int i = 0; i < SIZE; i++) {
-            for (int j = 0; j < SIZE; j++) {
+        for (int x = 0; x < SIZE; x++) {
+            for (int y = 0; y < SIZE; y++) {
                 if (pixels[x + y * SIZE] == TRANSPARENT_COLOR) {
                     pw.setArgb(x, y, 0);
                 } else {
-                    pw.setArgb(x, y, pixels[x + y * SIZE]);
+                    pw.setArgb(x, y, this.pixels[x + y * SIZE]);
                 }
             }
         }
@@ -222,7 +222,7 @@ public class Sprite {
 
         for (int i = 0; i < H; i++) {
             for (int j = 0; j < W; j++) {
-                final int argb = reader.getArgb(x, y);
+                final int argb = reader.getArgb(j, i);
                 for (int k = 0; k < S; k++) {
                     for (int l = 0; l < S; l++)
                         writer.setArgb(j * S + l, i * S + k, argb);

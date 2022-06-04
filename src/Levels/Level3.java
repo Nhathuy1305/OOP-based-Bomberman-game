@@ -23,7 +23,7 @@ public class Level3 {
         enemy.clear();
         block.clear();
         swap_kill = 1;
-        new MapCreation("res/levels/Levels.Level3.txt");
+        new MapCreation("res/levels/Level3.txt");
         player.setLife(true);
         player.setX(32);
         player.setY(32);

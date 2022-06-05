@@ -4,12 +4,12 @@ import javafx.scene.image.Image;
 import Entity.Entity;
 
 public abstract class Animal extends Entity {
-    protected int is_move;      // jump with pixel
-    protected int swap;        // swap image
-    protected String direction;// direction of player
-    protected int count;       // count step of a jump
+    protected int is_move;        // jump with pixel
+    protected int swap;           // swap image
+    protected String direction;   // direction of player
+    protected int count;          // count step of a jump
     protected int count_to_run;   // run after count frame
-    protected boolean life;     // life of enemy
+    protected boolean life;       // life of enemy
 
     
     public Animal(int x_unit, int y_unit, Image img) {         

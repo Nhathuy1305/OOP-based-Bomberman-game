@@ -54,6 +54,7 @@ public class RunBomberman extends Application {
     private long last_time;
 
     public static Stage main_stage = null;
+    public boolean isPause = false;
 
     @Override
     public void start(Stage stage){
@@ -91,6 +92,9 @@ public class RunBomberman extends Application {
                     case SPACE:
                         Bomb.putBomb();
                         break;
+                    case P:
+                        isPause = !isPause;
+                        break;
                 }
             }
         });
@@ -109,8 +113,10 @@ public class RunBomberman extends Application {
             public void handle(long l) {
                 if (running) {
                     render();
-                    update();
-                    time();
+                    if(!isPause){
+                        update();
+                        time();
+                    }
                     updateMenu();
                 }
             }

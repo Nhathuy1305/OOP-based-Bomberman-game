@@ -5,7 +5,7 @@ import javafx.scene.image.*;
 public class Sprite {
     public static final int ORIGINAL_SIZE = 16;
     public static final int SCALED_SIZE = ORIGINAL_SIZE * 2;
-    private static final int TRANSPARENT_COLOR = 0xffff00f;
+    private static final int TRANSPARENT_COLOR = -65281;
     public final int SIZE;
     private int x, y;
     public int[] pixels;
@@ -202,7 +202,7 @@ public class Sprite {
                 if (pixels[x + y * SIZE] == TRANSPARENT_COLOR) {
                     pw.setArgb(x, y, 0);
                 } else {
-                    pw.setArgb(x, y, this.pixels[x + y * SIZE]);
+                    pw.setArgb(x, y, pixels[x + y * SIZE]);
                 }
             }
         }

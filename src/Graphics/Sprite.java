@@ -3,9 +3,9 @@ package Graphics;
 import javafx.scene.image.*;
 
 public class Sprite {
-    public static final int ORIGINAL_SIZE = 16;
-    public static final int SCALED_SIZE = ORIGINAL_SIZE * 2;
-    private static final int TRANSPARENT_COLOR = -65281;
+    public static final int ORIGINAL_SIZE = 16;                 // Create original Size
+    public static final int SCALED_SIZE = ORIGINAL_SIZE * 2;    // Create scaled size = original size * 2
+    private static final int TRANSPARENT_COLOR = -65281;        // Declare transparent color
     public final int SIZE;
     private int x, y;
     public int[] pixels;
@@ -13,6 +13,7 @@ public class Sprite {
     protected int real_height;
     private SpriteSheet sheet;
 
+    // This function is used to load the animation and image in pixels * SIZE in pixels
     private void load() {
         for (int y = 0; y < SIZE; y++) {
             for (int x = 0; x < SIZE; x++) {
@@ -21,6 +22,7 @@ public class Sprite {
         }
     }
 
+    // Constructor to create object from Sprite
     public Sprite(int SIZE, int x, int y, int real_width, int real_height, SpriteSheet sheet) {
         this.SIZE = SIZE;
         this.x = x * this.SIZE;
@@ -32,15 +34,17 @@ public class Sprite {
         load();
     }
 
+
+    // This object creates transparent color in the outline of the interface.
     public static Sprite transparent = new Sprite(ORIGINAL_SIZE, 15, 15, 16, 16, SpriteSheet.tiles);
 
-    /* Board */
+    /* Board: Create object grass, brick, portal, wall in game */
     public static Sprite grass = new Sprite(ORIGINAL_SIZE, 6, 0, 16, 16, SpriteSheet.tiles);
     public static Sprite brick = new Sprite(ORIGINAL_SIZE, 7, 0, 16, 16, SpriteSheet.tiles);
     public static Sprite portal = new Sprite(ORIGINAL_SIZE, 4, 0, 14, 14, SpriteSheet.tiles);
     public static Sprite wall = new Sprite(ORIGINAL_SIZE, 5, 0, 16, 16, SpriteSheet.tiles);
 
-    /* Bomber */
+    /* Bomber: to create object control when player move in 4 directions: up, down, right, and left */
     public static Sprite control_up = new Sprite(ORIGINAL_SIZE, 0, 0, 12, 16, SpriteSheet.tiles);
     public static Sprite control_down = new Sprite(ORIGINAL_SIZE, 2, 0, 12, 15, SpriteSheet.tiles);
     public static Sprite control_right = new Sprite(ORIGINAL_SIZE, 1, 0, 10, 16, SpriteSheet.tiles);
@@ -58,13 +62,13 @@ public class Sprite {
     public static Sprite control_left_1 = new Sprite(ORIGINAL_SIZE, 3, 1, 11, 16, SpriteSheet.tiles);
     public static Sprite control_left_2 = new Sprite(ORIGINAL_SIZE, 3, 2, 12, 16, SpriteSheet.tiles);
 
-    /* Death */
+    /* Death: Create object when player dead */
     public static Sprite player_dead_1 = new Sprite(ORIGINAL_SIZE, 4, 2, 14, 16, SpriteSheet.tiles);
     public static Sprite player_dead_2 = new Sprite(ORIGINAL_SIZE, 5, 2, 13, 15, SpriteSheet.tiles);
     public static Sprite player_dead_3 = new Sprite(ORIGINAL_SIZE, 6, 2, 16, 16, SpriteSheet.tiles);
 
 
-    /* Character */
+    /* Character/Enemy: Create an object for each enemy and follow up on the movement direction */
 
     // BALLOM
     public static Sprite ballom_right_1 = new Sprite(ORIGINAL_SIZE, 10, 0, 16, 16, SpriteSheet.tiles);
@@ -131,7 +135,7 @@ public class Sprite {
     public static Sprite bomb_1 = new Sprite(ORIGINAL_SIZE, 1, 3, 13, 15, SpriteSheet.tiles);
     public static Sprite bomb_2 = new Sprite(ORIGINAL_SIZE, 2, 3, 12, 14, SpriteSheet.tiles);
 
-    /* FlameSegment Sprites */
+    /* FlameSegment Sprites: Create object bomb flame, default range is 2px to the vertical and horizontal, begin in the center position */
     public static Sprite bomb_exploded = new Sprite(ORIGINAL_SIZE, 0, 4, 16, 16, SpriteSheet.tiles);
     public static Sprite bomb_exploded_1 = new Sprite(ORIGINAL_SIZE, 0, 5, 16, 16, SpriteSheet.tiles);
     public static Sprite bomb_exploded_2 = new Sprite(ORIGINAL_SIZE, 0, 6, 16, 16, SpriteSheet.tiles);
@@ -160,40 +164,25 @@ public class Sprite {
     public static Sprite explosion_vertical_down_last_1 = new Sprite(ORIGINAL_SIZE, 2, 6, 16, 16, SpriteSheet.tiles);
     public static Sprite explosion_vertical_down_last_2 = new Sprite(ORIGINAL_SIZE, 3, 6, 16, 16, SpriteSheet.tiles);
 
-    /* Brick Flame Segment */
-    public static Sprite brick_exploded = new Sprite(ORIGINAL_SIZE, 7, 1, 16, 16, SpriteSheet.tiles);
-    public static Sprite brick_exploded_1 = new Sprite(ORIGINAL_SIZE, 7, 2, 16, 16, SpriteSheet.tiles);
-    public static Sprite brick_exploded_2 = new Sprite(ORIGINAL_SIZE, 7, 3, 16, 16, SpriteSheet.tiles);
-
-    /* Powerups */
-    public static Sprite powerup_bombs = new Sprite(ORIGINAL_SIZE, 0, 10, 16, 16, SpriteSheet.tiles);
+    /* Powerups: Flame segment when the bomber get the power items */
     public static Sprite powerup_flames = new Sprite(ORIGINAL_SIZE, 1, 10, 16, 16, SpriteSheet.tiles);
     public static Sprite powerup_speed = new Sprite(ORIGINAL_SIZE, 2, 10, 16, 16, SpriteSheet.tiles);
-    public static Sprite powerup_wallpass = new Sprite(ORIGINAL_SIZE, 3, 10, 16, 16, SpriteSheet.tiles);
-    public static Sprite powerup_detonator = new Sprite(ORIGINAL_SIZE, 4, 10, 16, 16, SpriteSheet.tiles);
-    public static Sprite powerup_bombpass = new Sprite(ORIGINAL_SIZE, 5, 10, 16, 16, SpriteSheet.tiles);
-    public static Sprite powerup_flamepass = new Sprite(ORIGINAL_SIZE, 6, 10, 16, 16, SpriteSheet.tiles);
 
+    // Setter color
     private void setColor(int color) {
         for (int i = 0; i < pixels.length; i++) {
             pixels[i] = color;
         }
     }
 
+    // Constructor Sprite(int, int)
     public Sprite(int SIZE, int color) {
         this.SIZE = SIZE;
         pixels = new int[this.SIZE * this.SIZE];
         setColor(color);
     }
 
-    public int getSIZE() {
-        return SIZE;
-    }
-
-    public int getPixel(int i) {
-        return pixels[i];
-    }
-
+    // This function is used to set the game in transparent_color by set Argb color.
     public Image getFxImage() {
         WritableImage wr = new WritableImage(SIZE, SIZE);
         PixelWriter pw = wr.getPixelWriter();
@@ -210,6 +199,7 @@ public class Sprite {
         return resample(input, SCALED_SIZE / ORIGINAL_SIZE);
     }
 
+    // Resample to read the argb color
     private Image resample(Image input, int scaleFactor) {
         final int H = (int) input.getHeight();
         final int W = (int) input.getWidth();

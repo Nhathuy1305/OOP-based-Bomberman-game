@@ -59,12 +59,13 @@
 This is our game project for our final lab in our Object-Oriented Programming course in semester 2 (2020 - 2021). Bomberman is an individual game that does not require players have excellent skills or advanced technology. It's a straightforward game that may be enjoyed by people of all ages. As a result of all of these factors, we developed a program that is user-friendly and assists users in having the greatest possible experiences. So, what are we waiting for? Let the story begin!
 
 ### Team Members
-```
- Phạm Gia Bảo – ITITIU20166 (leader)
- Phan Nguyễn Hoàng Bảo – ITITIU20165
- Nguyễn Luận Công Bằng - ITITIU20163
- Đặng Nhật Huy - ITITIU20043
-```
+
+|Order    | Name      | ID  |              Email               | Github account       |    Facebook            | 
+| :------------: |   :---:       | :--------: |:--------------------------------:|:---------------------------:| :----------------:|
+|1| Pham Gia Bao           | ITITIU20166  |  Phamgiabao1862001@gmail.com     |   [giabao18](https://github.com/giabao18)                      |  [Gia Bảo](https://www.facebook.com/profile.php?id=100007374601572) |
+|2| Phan Nguyen Hoang Bao  | ITITIU20165  | hoangbao15082002@gmail.com       | [Mr@JEY](https://github.com/PhanNguyenHoangBao-ITITIU20165)                           |  [Hoàng Bảo](https://www.facebook.com/kuma.jeyruei)|
+|3| Nguyen Luan Cong Bang  | ITITIU20163  | bangnguyen.071102@gmail.com      |   [congbangitiu](https://github.com/congbangitiu)                  | [Công Bằng](https://www.facebook.com/congbang.nguyenluan)|
+|4| Dang Nhat Huy          | ITITIU20043  | dnhuy.ityu@gmail.com             |    [Nhathuy1305](https://github.com/Nhathuy1305)                        | [Nhật Huy](https://www.facebook.com/nhhuy.135/)|
 
 ### Installation
 
@@ -90,18 +91,32 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 
 |Order| Task      | Person |Contribution|
 |:---|   :-------------------------------------------------------| :--------: |:-----:|
-| 1  | Level, Utility, Readme.md      | Gia Bao      |25|
-| 2  | Control| Hoang Bao    |25|
-|3| Entities | Cong Bang|   25  |
-|4| Graphics | Nhat Huy     |  25  |  
+| 1  | Level, Utility, Readme     | Gia Bao      |25|
+| 2  | Control, Ui| Hoang Bao    |25|
+|3| Entities, PowerPoint | Cong Bang|   25  |
+|4| Graphics, PowerPoint, Github Management | Nhat Huy |  25  |  
 
 <br />
+## GAME <a name="Game"></a> :rocket:
+## Requirement for software:  
 
 ## Technologies
 - Language:  [JAVA](https://www.java.com/en/)
 - Framework:  [IntelliJ](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com)
 - Intelligent:  [A* algorithms](https://www.geeksforgeeks.org/a-search-algorithm/)
 - Library:  [JavaFx](https://openjfx.io)
+
+### How to play:question:  
+Players will direct the character's movement in order to place bombs to killing the enemy. After the player has killed all of the monsters of this level a portal will open for the character to enter in order to advance to the next level (we have 3 levels).
+
+### Game logic :bulb:
+- Character: The character is controlled by the arrow key combination, only one bomb can be placed at a time.Moreover ,The character will gain speed change if the value is SpeedItem.
+- Bomb: When the bomb explodes, it will create a fire trail, if the character or the enemy hits the fire trail, they will all be destroyed. The length of the flame will increase if the character eats flameitem
+- Enemy: includes 4 types and is divided by level, each type has its own attribute.
+- Brick : it Can be broken by bombs and can contain items
+- Wall : it cannot be broken to limit the movement of characters and enemies
+
+
 
 <br />
 
@@ -116,7 +131,7 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 <!-- CHALLENGES -->
 ## Challenges
 - Task allocation for each team member
-- Using platform for communication (Trello)  
+- Using platform for communication ([Trello](https://trello.com/b/Ac0ISkzt/bomber-game-oop-project-2022))  
 - Working environment (Github)
 
 <br />
@@ -125,15 +140,7 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 
 <br />
 
-<!-- CONTACT -->
-## Contact
 
-|Order    | Name      | ID  |              Email               | Github account       |    Facebook            | 
-| :------------: |   :---:       | :--------: |:--------------------------------:|:---------------------------:| :----------------:|
-|1| Pham Gia Bao           | ITITIU20166  |  Phamgiabao1862001@gmail.com     |   [giabao18](https://github.com/giabao18)                      |  [Gia Bảo](https://www.facebook.com/profile.php?id=100007374601572) |
-|2| Phan Nguyen Hoang Bao  | ITITIU20165  | hoangbao15082002@gmail.com       | [Mr@JEY](https://github.com/PhanNguyenHoangBao-ITITIU20165)                           |  [Hoàng Bảo](https://www.facebook.com/kuma.jeyruei)|
-|3| Nguyen Luan Cong Bang  | ITITIU20163  | bangnguyen.071102@gmail.com      |   [congbangitiu](https://github.com/congbangitiu)                  | [Công Bằng](https://www.facebook.com/congbang.nguyenluan)|
-|4| Dang Nhat Huy          | ITITIU20043  | dnhuy.ityu@gmail.com             |    [Nhathuy1305](https://github.com/Nhathuy1305)                        | [Nhật Huy](https://www.facebook.com/nhhuy.135/)|
 
 <br />
 

@@ -88,7 +88,7 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 
 ### Task Allocation
 
-|Order| Task      | PersonInCharge |Contribution|
+|Order| Task      | Person |Contribution|
 |:---|   :-------------------------------------------------------| :--------: |:-----:|
 | 1  | Level, Utility, Readme.md      | Gia Bao      |25|
 | 2  | Control| Hoang Bao    |25|

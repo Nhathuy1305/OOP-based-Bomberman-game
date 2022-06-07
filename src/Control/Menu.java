@@ -17,6 +17,7 @@ public class Menu {
     private static ImageView statusGame;
     public static Text level, bomb, time;
     public static int bomb_number = 20, time_number = 120;   // the number of bomb is 20 and the time limit is 120 seconds
+    public static Image pauseGame, playGame;
 
     public static void createMenu(Group root) { //Create a menu
         level = new Text("Level: 1");
@@ -35,7 +36,7 @@ public class Menu {
         time.setX(608);
         time.setY(20);
 
-        Image newGame = new Image("images/newGame.png");
+        Image newGame = new Image("images/startButton.png");
         statusGame = new ImageView(newGame);
         statusGame.setX(-75);
         statusGame.setY(-10);
@@ -50,9 +51,12 @@ public class Menu {
 
         root.getChildren().add(pane);
 
+        pauseGame = new Image("images/pauseButton.png");
+        playGame = new Image("images/resumeButton.png");
+
         statusGame.setOnMouseClicked(event -> {     //Event when you click the play game button, if your character still alive, the game will pause, else the game will start at level 1
             if (player.isLife()) {
-                running = !running;
+                isPause = !isPause;
             } else {
                 new Level1();
                 running = true;
@@ -67,15 +71,13 @@ public class Menu {
         bomb.setText("Bombs: " + bomb_number);
 
         if (player.isLife())
-            if (running) {
-                Image pauseGame = new Image("images/pauseGame.png");
+            if (isPause) {
                 statusGame.setImage(pauseGame);
             } else {
-                Image playGame = new Image("images/playGame.png");
                 statusGame.setImage(playGame);
             }
         else {
-            Image newGame = new Image("images/newGame.png");
+            Image newGame = new Image("images/startButton.png");
             statusGame.setImage(newGame);
         }
     }

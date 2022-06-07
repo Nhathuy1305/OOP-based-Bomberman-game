@@ -54,7 +54,7 @@ public class RunBomberman extends Application {
     private long last_time;
 
     public static Stage main_stage = null;
-    public boolean isPause = false;
+    public static boolean isPause = false;
 
     @Override
     public void start(Stage stage){

@@ -60,10 +60,10 @@ This is our game project for our final lab in our Object-Oriented Programming co
 
 ### Team Members
 ```
-- Phạm Gia Bảo – ITITIU20166 (leader)
-- Phan Nguyễn Hoàng Bảo – ITITIU20165
-- Nguyễn Luận Công Bằng - ITITIU20163
-- Đặng Nhật Huy - ITITIU20043
+ Phạm Gia Bảo – ITITIU20166 (leader)
+ Phan Nguyễn Hoàng Bảo – ITITIU20165
+ Nguyễn Luận Công Bằng - ITITIU20163
+ Đặng Nhật Huy - ITITIU20043
 ```
 
 ### Installation

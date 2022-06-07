@@ -1,17 +1,17 @@
 404 Not Found Team
 1.	Introduction:
 	a.	Team members: 
-		•	Phạm Gia Bảo – ITITIU20166 (leader)
-		•	Phan Nguyễn Hoàng Bảo – ITITIU20165
-		•	Nguyễn Luận Công Bằng - ITITIU20163
-		•	Đặng Nhật Huy - ITITIU20043
+	-	Phạm Gia Bảo – ITITIU20166 (leader)
+	-	Phan Nguyễn Hoàng Bảo – ITITIU20165
+	-	Nguyễn Luận Công Bằng - ITITIU20163
+	-	Đặng Nhật Huy - ITITIU20043
 	b.	Topic: Bomberman
 	c.	Motivation for choosing Bomberman.
-		As a fresher developer, we assume that the Bomberman game is one the most simple game which helps us in practicing coding with OOP also some significant aspects of the front-end such as: How to render the game? , How frame working in UX/UI? , ….
+	As a fresher developer, we assume that the Bomberman game is one the most simple game which helps us in practicing coding with OOP also some significant aspects of the front-end such as: How to render the game? , How frame working in UX/UI? , ….
 	d.	Task allocation for each team member.
-		-	Phạm Gia Bảo: Level, Utility, Readme.md
-		-	Phan Nguyễn Hoàng Bảo: Control
-		-	Nguyễn Luận Công Bằng: Entities
+	-	Phạm Gia Bảo: Level, Utility, Readme.md
+	-	Phan Nguyễn Hoàng Bảo: Control
+	-	Nguyễn Luận Công Bằng: Entities
 		-	Đặng Nhật Huy: Graphics
 2.	Technology stack selection:
 	-	Language: Java

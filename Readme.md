@@ -101,8 +101,6 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 | 4     | Graphics, PowerPoint, Github Management | Nhat Huy  |      25      |
 
 <br />
-## GAME <a name="Game"></a> :rocket:
-## Requirement for software:
 
 ## Technologies
 
@@ -160,46 +158,57 @@ Players will direct the character's movement in order to place bombs to killing 
 ## UML Class Diagram
 <!-- ![](UML_Diagrams/Control.jpeg) -->
 
-<div align="center">
-	<h3 align="center">1. Control</h3>
-    	<img src="UML_Diagrams/Control.jpeg" width="700" height="700">
-	<h3 align="center">-----------------------</h3>
-	<h3 align="center">2. Entity</h3>
-	<img src="UML_Diagrams/Entity.jpeg" width="900" height="900">
-	<h3 align="center">-----------------------</h3>
-	<h3 align="center">3. Features</h3>
-	<img src="UML_Diagrams/Features.jpeg" width="400" height="700">
-	<h3 align="center">-----------------------</h3>
-	<h3 align="center">4. GameRunner</h3>
-	<img src="UML_Diagrams/GameRunner.jpeg" width="300" height="700">
-	<h3 align="center">-----------------------</h3>
-	<h3 align="center">5. Graphics</h3>
-	<img src="UML_Diagrams/Graphics.jpeg" width="700" height="700">
-	<h3 align="center">-----------------------</h3>
-	<h3 align="center">6. Levels</h3>
-	<img src="UML_Diagrams/Levels.jpeg" width="700" height="300">
+<div>
+	<h3>1. Control</h3>
+    <br />
+    <br />
+	<div align="center">-----------------------</div>
+	<h3>2. Entity</h3>
+    <br />
+    <br />
+	<div align="center">-----------------------</div>
+	<h3>3. Features</h3>
+    <br />
+    <br />
+	<div align="center">-----------------------</div>
+	<h3>4. GameRunner</h3>
+    <br />
+    <br />
+	<div align="center">-----------------------</div>
+	<h3>5. Graphics</h3>
+    <br />
+    <br />
+	<div align="center">-----------------------</div>
+	<h3>6. Levels</h3>
 </div>
 <br />
 
+<!-- FEATURES -->
 ## Features
-
+- Completed: UX/UI, sound of game, enhancing algorithms
+- Incompleted: Minvo, 2 players, multiple characters for choosing, …
 <br />
 
 <!-- CHALLENGES -->
-
 ## Challenges
 
 - Task allocation for each team member
 - Using platform for communication ([Trello](https://trello.com/b/Ac0ISkzt/bomber-game-oop-project-2022))
 - Working environment (Github)
-
 <br />
 	
 ## Acknowledgments
+<div style="text-align:justify">
+We would want to express our gratitude to Tom for providing us with the chance to
+participate in this project and apply what we learned in theory into practice. This project's
+learning curve was steep, but it was well worth it for all of us. We have learned more about interface technologies to construct a functioning application
+that interacts with our project. Tom, we want to thank you again for all the hard work and expertise that you have
+put into your teaching. We'll make sure that all we've learned doesn't go to waste, and that
+we can master them better from now on :heart:
+<div>
 
 <br />
 
-<br />
 
 ## References
 

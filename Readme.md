@@ -161,25 +161,47 @@ Players will direct the character's movement in order to place bombs to killing 
 <div>
 	<h3>1. Control</h3>
     <br />
+    <div align="center">
+        <img src="UML_Diagrams/Control.png" alt="">
+    </div>
     <br />
-	<div align="center">-----------------------</div>
+	<div align="center">------------------------------------</div>
 	<h3>2. Entity</h3>
     <br />
+    <div align="center">
+        <img src="UML_Diagrams/Entity.png" alt="">
+    </div>
     <br />
-	<div align="center">-----------------------</div>
+    <br />
+	<div align="center">------------------------------------</div>
 	<h3>3. Features</h3>
     <br />
+    <div align="center">
+        <img src="UML_Diagrams/Features.png" alt="">
+    </div>
     <br />
-	<div align="center">-----------------------</div>
+	<div align="center">------------------------------------</div>
 	<h3>4. GameRunner</h3>
     <br />
+    <div align="center">
+        <img src="UML_Diagrams/gameRunner.png" alt="">
+    </div>
     <br />
-	<div align="center">-----------------------</div>
+	<div align="center">------------------------------------</div>
 	<h3>5. Graphics</h3>
     <br />
+    <div align="center">
+        <img src="UML_Diagrams/Graphics.png" alt="">
+    </div>
     <br />
-	<div align="center">-----------------------</div>
+	<div align="center">------------------------------------</div>
 	<h3>6. Levels</h3>
+    <br />
+    <div align="center">
+        <img src="UML_Diagrams/Levels.png" alt="">
+    </div>
+    <br />
+    <div align="center">------------------------------------</div>
 </div>
 <br />
 

@@ -16,6 +16,7 @@ public class SoundManager extends JFrame{
     public static Clip title_screen;
     public static Clip bomb_explosion;
     public static Clip just_died;
+    public static Clip put_bomb;
     public static boolean is_sound_died;
     public static boolean is_sound_title;
     private static boolean is_sound_complete;
@@ -29,7 +30,7 @@ public class SoundManager extends JFrame{
             if (sound.equals("title")) {
                 title_screen = AudioSystem.getClip();
                 title_screen.open(audio_input);
-                title_screen.start();
+                //title_screen.start();
                 title_screen.loop(10);
             }
             if (sound.equals("explosion")) {
@@ -42,10 +43,10 @@ public class SoundManager extends JFrame{
                 just_died.open(audio_input);
                 just_died.start();
             }
-            if (sound.equals("put_bombs")) {
-                just_died = AudioSystem.getClip();
-                just_died.open(audio_input);
-                just_died.start();
+            if (sound.equals("putBomb")) {
+                put_bomb = AudioSystem.getClip();
+                put_bomb.open(audio_input);
+                put_bomb.start();
             }
             if (sound.equals("default")) {
                 Clip clip = AudioSystem.getClip();

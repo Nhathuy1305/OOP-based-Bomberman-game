@@ -40,6 +40,7 @@ public class Bomb extends Entity {
 
     public static void putBomb() {      // The function used for the bomber to place the bomb
         if (is_bomb == 0 && bomb_number > 0) {
+            new SoundManager("sound/put_bombs.wav", "putBomb");
             bomb_number--;
             is_bomb = 1;
             time_bomb = System.currentTimeMillis();

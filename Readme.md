@@ -53,10 +53,10 @@
 ## Introduction
 
 <div align="center">
-<img src="https://im3.ezgif.com/tmp/ezgif-3-3359dd0762.gif" alt="">
+<img src="screenshots/Intro.gif" alt="">
 </div>
 
-
+<div style="text-align:justify">
 This is our game project for our final lab in our Object-Oriented Programming course in semester 2 (2020 - 2021). Bomberman is an individual game that does not require players have excellent skills or advanced technology. It's a straightforward game that may be enjoyed by people of all ages. As a result of all of these factors, we developed a program that is user-friendly and assists users in having the greatest possible experiences. So, what are we waiting for? Let the story begin!
 </div>
 
@@ -121,10 +121,9 @@ Players will direct the character's movement in order to place bombs to killing 
 
 ### Game logic :bulb:
 
-=======
 - Character: The character is controlled by the arrow key combination, only one bomb can be placed at a time.Moreover ,The character will gain speed change if the value is SpeedItem.
 <div align="center">
-<img src="https://im3.ezgif.com/tmp/ezgif-3-d651f37bfc.gif" alt="">
+<img src="screenshots/Character.gif" alt="">
 </div>
 
 
@@ -133,7 +132,7 @@ Players will direct the character's movement in order to place bombs to killing 
 
 - Bomb: When the bomb explodes, it will create a fire trail, if the character or the enemy hits the fire trail, they will all be destroyed. The length of the flame will increase if the character eats flameitem
 <div align="center">
-<img src="https://im3.ezgif.com/tmp/ezgif-3-d611e523e4.gif" alt="">
+<img src="screenshots/Bomb.gif" alt="">
 </div>
 
 
@@ -141,10 +140,10 @@ Players will direct the character's movement in order to place bombs to killing 
 
 - Enemy: includes 4 types and is divided by level, each type has its own attribute.
 <div align="center">
-<img src="https://im3.ezgif.com/tmp/ezgif-3-23039a9fe0.gif" alt="">
-<img src="https://im2.ezgif.com/tmp/ezgif-2-20ed5fdbe9.gif" alt="">
-<img src="https://im2.ezgif.com/tmp/ezgif-2-217f6043c8.gif" alt="">
-<img src="https://im2.ezgif.com/tmp/ezgif-2-fb0436521c.gif" alt="">
+<img src="screenshots/Ballom.gif" alt="">
+<img src="screenshots/Oneal.gif" alt="">
+<img src="screenshots/Kondoria.gif" alt="">
+<img src="screenshots/Doll.gif" alt="">
 </div>
 
 

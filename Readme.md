@@ -1,4 +1,7 @@
-<div id="top"></div>
+
+<div id="top" align="center">
+<img src="screenshots/Banner_For_Readme.png" alt="Banner">
+</div>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -54,7 +57,11 @@
 <!-- ABOUT THE PROJECT -->
 ## Introduction
 
-![Game Screen Shot](https://im3.ezgif.com/tmp/ezgif-3-3359dd0762.gif)
+<div align="center">
+<img src="https://im3.ezgif.com/tmp/ezgif-3-3359dd0762.gif" alt="">
+</div>
+
+
 
 This is our game project for our final lab in our Object-Oriented Programming course in semester 2 (2020 - 2021). Bomberman is an individual game that does not require players have excellent skills or advanced technology. It's a straightforward game that may be enjoyed by people of all ages. As a result of all of these factors, we developed a program that is user-friendly and assists users in having the greatest possible experiences. So, what are we waiting for? Let the story begin!
 
@@ -162,4 +169,3 @@ Players will direct the character's movement in order to place bombs to killing 
 [stars-url]: https://github.com/Nhathuy1305/OOP_BOMBERMAN_GAME/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Nhathuy1305/OOP_BOMBERMAN_GAME.svg?style=for-the-badge
 [issues-url]: https://github.com//Nhathuy1305/OOP_BOMBERMAN_GAME/issues
-[product-screenshot]: images/screenshot.png

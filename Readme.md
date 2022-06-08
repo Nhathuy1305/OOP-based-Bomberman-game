@@ -159,13 +159,26 @@ Players will direct the character's movement in order to place bombs to killing 
 <br />
 
 ## UML Class Diagram
-<div class="">
-    <ul>
-        <li><img src="TEST-BONMBERMAN\OOP_BOMBERMAN_GAME\UML Diagrams/Control.jpeg" alt ></li>
-	  <li><a href="#installation">Installation</a></li>
-	  <li><a href="#motivation">Motivation</a></li>
-	   <li><a href="#task-allocation">Task Allocation</a></li>      
-     </ul>
+<!-- ![](UML_Diagrams/Control.jpeg) -->
+
+<div align="center">
+	<h3 align="center">1. Control</h3>
+    	<img src="UML_Diagrams/Control.jpeg" width="700" height="700">
+	<h3 align="center">-----------------------</h3>
+	<h3 align="center">2. Entity</h3>
+	<img src="UML_Diagrams/Entity.jpeg" width="900" height="900">
+	<h3 align="center">-----------------------</h3>
+	<h3 align="center">3. Features</h3>
+	<img src="UML_Diagrams/Features.jpeg" width="400" height="700">
+	<h3 align="center">-----------------------</h3>
+	<h3 align="center">4. GameRunner</h3>
+	<img src="UML_Diagrams/GameRunner.jpeg" width="300" height="700">
+	<h3 align="center">-----------------------</h3>
+	<h3 align="center">5. Graphics</h3>
+	<img src="UML_Diagrams/Graphics.jpeg" width="700" height="700">
+	<h3 align="center">-----------------------</h3>
+	<h3 align="center">6. Levels</h3>
+	<img src="UML_Diagrams/Levels.jpeg" width="700" height="300">
 </div>
 <br />
 

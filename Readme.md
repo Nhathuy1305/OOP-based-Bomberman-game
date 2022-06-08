@@ -158,29 +158,6 @@ Players will direct the character's movement in order to place bombs to killing 
 ## UML Class Diagram:clipboard:
 <!-- ![](UML_Diagrams/Control.jpeg) -->
 
-<div>
-	<h3>1. Control</h3>
-    <br />
-    <br />
-	<div align="center">-----------------------</div>
-	<h3>2. Entity</h3>
-    <br />
-    <br />
-	<div align="center">-----------------------</div>
-	<h3>3. Features</h3>
-    <br />
-    <br />
-	<div align="center">-----------------------</div>
-	<h3>4. GameRunner</h3>
-    <br />
-    <br />
-	<div align="center">-----------------------</div>
-	<h3>5. Graphics</h3>
-    <br />
-    <br />
-	<div align="center">-----------------------</div>
-	<h3>6. Levels</h3>
-</div>
 <br />
 
 <!-- FEATURES -->

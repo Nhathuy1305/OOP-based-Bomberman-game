@@ -20,7 +20,7 @@
     A Java game created with JavaFX for OOP course in International University - VNUHCM!
     <br />
     <br />
-    <a href="https://github.com/Nhathuy1305/OOP_BOMBERMAN_GAME.git">View Demo</a>
+    <a href="https://youtu.be/iLo5E-07aY0">View Demo</a>
   </p>
 </div>
 

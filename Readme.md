@@ -101,8 +101,6 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 | 4     | Graphics, PowerPoint, Github Management | Nhat Huy  |      25      |
 
 <br />
-## GAME <a name="Game"></a> :rocket:
-## Requirement for software:
 
 ## Technologies
 

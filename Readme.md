@@ -211,6 +211,13 @@ we can master them better from now on :heart:
 
 
 ## References
+1. [phuctd99](https://github.com/phuctd99/bom)
+2. [carlosflorencio](https://github.com/carlosflorencio/bomberman/blob/master/.project)
+3. [minhnq410](https://github.com/minhnq410/Bomberman_Assignment_2/tree/master/src/uet/oop/bomberman)
+4. [JavaFx Tutorial](https://openjfx.io/openjfx-docs/)
+5. [A* Intelligent](https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/a-star-algorithm#:~:text=PythonExplore%20Course-,What%20is%20an%20A*%20Algorithm%3F,shortest%20path%20to%20be%20taken.)
+
+<br />
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 

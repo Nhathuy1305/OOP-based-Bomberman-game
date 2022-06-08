@@ -56,7 +56,13 @@
 <img src="https://im3.ezgif.com/tmp/ezgif-3-3359dd0762.gif" alt="">
 </div>
 
+<<<<<<< HEAD
+=======
+
+<div style="text-align:justify">
+>>>>>>> 0a1a2f128449a85092d9cc4afff642ddd5f75da2
 This is our game project for our final lab in our Object-Oriented Programming course in semester 2 (2020 - 2021). Bomberman is an individual game that does not require players have excellent skills or advanced technology. It's a straightforward game that may be enjoyed by people of all ages. As a result of all of these factors, we developed a program that is user-friendly and assists users in having the greatest possible experiences. So, what are we waiting for? Let the story begin!
+</div>
 
 ### Team Members
 
@@ -85,7 +91,9 @@ This is our game project for our final lab in our Object-Oriented Programming co
 
 ### Motivation
 
+<div style="text-align:justify">
 As a fresher developer, we assume that the Bomberman game is one the most simple game which helps us in practicing coding with OOP also some significant aspects of the front-end such as: How to render the game? , How frame working in UX/UI? , ….
+</div>
 
 ### Task Allocation
 
@@ -102,6 +110,7 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 
 ## Technologies
 
+<<<<<<< HEAD
 - Language: [JAVA](https://www.java.com/en/)
 - Framework: [IntelliJ](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com)
 - Intelligent: [A\* algorithms](https://www.geeksforgeeks.org/a-search-algorithm/)
@@ -109,9 +118,15 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 
 ### How to play:question:
 
+=======
+### How to play:question:
+<div style="text-align:justify">
+>>>>>>> 0a1a2f128449a85092d9cc4afff642ddd5f75da2
 Players will direct the character's movement in order to place bombs to killing the enemy. After the player has killed all of the monsters of this level a portal will open for the character to enter in order to advance to the next level (we have 3 levels).
+</div>
 
 ### Game logic :bulb:
+<<<<<<< HEAD
 
 - Character: The character is controlled by the arrow key combination, only one bomb can be placed at a time.Moreover ,The character will gain speed change if the value is SpeedItem.
 - Bomb: When the bomb explodes, it will create a fire trail, if the character or the enemy hits the fire trail, they will all be destroyed. The length of the flame will increase if the character eats flameitem
@@ -119,6 +134,54 @@ Players will direct the character's movement in order to place bombs to killing 
 - Brick : it Can be broken by bombs and can contain items
 - Wall : it cannot be broken to limit the movement of characters and enemies
 
+=======
+#### Character
+<div style="text-align:justify">
+ The character is controlled by the arrow key combination, only one bomb can be placed at a time.Moreover ,The character will gain speed change if the value is SpeedItem.
+<div align="center">
+<img src="https://im3.ezgif.com/tmp/ezgif-3-d651f37bfc.gif" alt="">
+</div>
+</div>
+
+<br />
+
+#### Bomb
+<div style="text-align:justify">
+ When the bomb explodes, it will create a fire trail, if the character or the enemy hits the fire trail, they will all be destroyed. The length of the flame will increase if the character eats flame item.
+<div align="center">
+<img src="https://im3.ezgif.com/tmp/ezgif-3-d611e523e4.gif" alt="">
+</div>
+</div>
+
+<br />
+
+#### Enemy
+<div style="text-align:justify">
+Includes 4 types and is divided by level, each type has its own attribute.
+<div align="center">
+<img src="https://im3.ezgif.com/tmp/ezgif-3-23039a9fe0.gif" alt="">
+<img src="https://im2.ezgif.com/tmp/ezgif-2-20ed5fdbe9.gif" alt="">
+<img src="https://im2.ezgif.com/tmp/ezgif-2-217f6043c8.gif" alt="">
+<img src="https://im2.ezgif.com/tmp/ezgif-2-fb0436521c.gif" alt="">
+</div>
+</div>
+
+<br />
+
+#### Brick
+<div style="text-align:justify">
+It Can be broken by bombs and can contain items
+</div>
+
+<br />
+
+#### Wall
+<div style="text-align:justify">
+It cannot be broken to limit the movement of characters and enemies
+</div>
+
+
+>>>>>>> 0a1a2f128449a85092d9cc4afff642ddd5f75da2
 <br />
 
 ## UML Class Diagram

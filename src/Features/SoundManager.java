@@ -30,12 +30,15 @@ public class SoundManager extends JFrame{
             if (sound.equals("title")) {
                 title_screen = AudioSystem.getClip();
                 title_screen.open(audio_input);
-                //title_screen.start();
+                FloatControl gainControl = (FloatControl) title_screen.getControl(FloatControl.Type.MASTER_GAIN);
+                gainControl.setValue(-8.0f);
                 title_screen.loop(10);
             }
             if (sound.equals("explosion")) {
                 bomb_explosion = AudioSystem.getClip();
                 bomb_explosion.open(audio_input);
+                FloatControl gainControl = (FloatControl) bomb_explosion.getControl(FloatControl.Type.MASTER_GAIN);
+                gainControl.setValue(-8.0f);
                 bomb_explosion.start();
             }
             if (sound.equals("just_died")) {
@@ -46,6 +49,8 @@ public class SoundManager extends JFrame{
             if (sound.equals("putBomb")) {
                 put_bomb = AudioSystem.getClip();
                 put_bomb.open(audio_input);
+                FloatControl gainControl = (FloatControl) put_bomb.getControl(FloatControl.Type.MASTER_GAIN);
+                gainControl.setValue(+6.0206f);
                 put_bomb.start();
             }
             if (sound.equals("default")) {

@@ -205,7 +205,7 @@ learning curve was steep, but it was well worth it for all of us. We have learne
 that interacts with our project. Tom, we want to thank you again for all the hard work and expertise that you have
 put into your teaching. We'll make sure that all we've learned doesn't go to waste, and that
 we can master them better from now on :heart:
-<div>
+</div>
 
 <br />
 

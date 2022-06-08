@@ -26,13 +26,21 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-<details>
+# Table of contents :round_pushpin:
+1. [Introduction](#Introduction)
+2. [Game](#Game)
+3. [UML-class-diagram](#UML-class-diagram)
+4. [Features](#Features)
+5. [Challenges](#Challenges)
+6. [Acknowledgments](#Acknowledgments)
+7. [References](#References)
+<!-- <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#introduction">Introduction</a>
+      <a href="#Introduction">Introduction</a>
       <ul>
-        <li><a href="#team-members">Team Members</a></li>
+        <li><a href="#Team-members">Team Members</a></li>
 	<li><a href="#installation">Installation</a></li>
 	<li><a href="#motivation">Motivation</a></li>
 	<li><a href="#task-allocation">Task Allocation</a></li>      
@@ -43,14 +51,13 @@
     <li><a href="#features">Features</a></li>
     <li><a href="#challenges">Challenges</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#references">References</a></li>
   </ol>
-</details>
+</details> -->
 
 <!-- ABOUT THE PROJECT -->
 
-## Introduction
+## Introduction <a name="Introduction"></a> :bricks:
 
 <div align="center">
 <img src="screenshots/Intro.gif" alt="">
@@ -60,7 +67,7 @@
 This is our game project for our final lab in our Object-Oriented Programming course in semester 2 (2020 - 2021). Bomberman is an individual game that does not require players have excellent skills or advanced technology. It's a straightforward game that may be enjoyed by people of all ages. As a result of all of these factors, we developed a program that is user-friendly and assists users in having the greatest possible experiences. So, what are we waiting for? Let the story begin!
 </div>
 
-### Team Members
+### Team Members :couplekiss_man_man:
 
 | Order |         Name          |     ID      |            Email            |                       Github account                        |                              Facebook                              |
 | :---: | :-------------------: | :---------: | :-------------------------: | :---------------------------------------------------------: | :----------------------------------------------------------------: |
@@ -69,7 +76,7 @@ This is our game project for our final lab in our Object-Oriented Programming co
 |   3   | Nguyen Luan Cong Bang | ITITIU20163 | bangnguyen.071102@gmail.com |       [congbangitiu](https://github.com/congbangitiu)       |     [Công Bằng](https://www.facebook.com/congbang.nguyenluan)      |
 |   4   |     Dang Nhat Huy     | ITITIU20043 |    dnhuy.ityu@gmail.com     |        [Nhathuy1305](https://github.com/Nhathuy1305)        |          [Nhật Huy](https://www.facebook.com/nhhuy.135/)           |
 
-### Installation
+### Installation :dart: 
 
 1. Open the terminal on your IDE
 2. Clone the repo
@@ -85,13 +92,13 @@ This is our game project for our final lab in our Object-Oriented Programming co
    git checkout 'branch_name'
    ```
 
-### Motivation
+### Motivation :mechanical_arm:
 
 <div style="text-align:justify">
 As a fresher developer, we assume that the Bomberman game is one the most simple game which helps us in practicing coding with OOP also some significant aspects of the front-end such as: How to render the game? , How frame working in UX/UI? , ….
 </div>
 
-### Task Allocation
+### Task Allocation :ok_man:
 
 | Order | Task                                    |  Person   | Contribution |
 | :---- | :-------------------------------------- | :-------: | :----------: |
@@ -100,10 +107,12 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 | 3     | Entities, PowerPoint                    | Cong Bang |      25      |
 | 4     | Graphics, PowerPoint, Github Management | Nhat Huy  |      25      |
 
+
+<!-- Game -->
 <br />
 
-## Technologies
-
+## Game <a name="Game"></a>:joystick:
+### Technologies :globe_with_meridians:
 
 - Language: [JAVA](https://www.java.com/en/)
 - Framework: [IntelliJ](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com)
@@ -111,7 +120,7 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 - Library: [JavaFx](https://openjfx.io)
 
 
-### How to play:question:
+### How to play ? :video_game:
 <div style="text-align:justify">
 
 Players will direct the character's movement in order to place bombs to killing the enemy. After the player has killed all of the monsters of this level a portal will open for the character to enter in order to advance to the next level (we have 3 levels).
@@ -128,7 +137,7 @@ Players will direct the character's movement in order to place bombs to killing 
 <br />
 
 
-- Bomb: When the bomb explodes, it will create a fire trail, if the character or the enemy hits the fire trail, they will all be destroyed. The length of the flame will increase if the character eats flameitem
+- Bomb : When the bomb explodes, it will create a fire trail, if the character or the enemy hits the fire trail, they will all be destroyed. The length of the flame will increase if the character eats flameitem
 <div align="center">
 <img src="screenshots/Bomb.gif" alt="">
 </div>
@@ -155,9 +164,10 @@ Players will direct the character's movement in order to place bombs to killing 
 
 <br />
 
-## UML Class Diagram
+## UML Class Diagram<a name="UML-class-diagram"></a>:clipboard:
 <!-- ![](UML_Diagrams/Control.jpeg) -->
 
+<<<<<<< HEAD
 <div>
 	<h3>1. Control</h3>
     <br />
@@ -203,23 +213,25 @@ Players will direct the character's movement in order to place bombs to killing 
     <br />
     <div align="center">------------------------------------</div>
 </div>
+=======
+>>>>>>> 8fd6d25f155f828e4d8fdef22ffdc6e71fdd6463
 <br />
 
 <!-- FEATURES -->
-## Features
+## Features<a name="Features"> :triangular_flag_on_post:
 - Completed: UX/UI, sound of game, enhancing algorithms
 - Incompleted: Minvo, 2 players, multiple characters for choosing, …
 <br />
 
 <!-- CHALLENGES -->
-## Challenges
+## Challenges<a name="Challenges">:bangbang:
 
 - Task allocation for each team member
 - Using platform for communication ([Trello](https://trello.com/b/Ac0ISkzt/bomber-game-oop-project-2022))
 - Working environment (Github)
 <br />
 	
-## Acknowledgments
+## Acknowledgments<a name="Acknowledgments">:brain:
 <div style="text-align:justify">
 We would want to express our gratitude to Tom for providing us with the chance to
 participate in this project and apply what we learned in theory into practice. This project's
@@ -232,7 +244,7 @@ we can master them better from now on :heart:
 <br />
 
 
-## References
+## References<a name="References">  :eye::tongue::eye:
 1. [phuctd99](https://github.com/phuctd99/bom)
 2. [carlosflorencio](https://github.com/carlosflorencio/bomberman/blob/master/.project)
 3. [minhnq410](https://github.com/minhnq410/Bomberman_Assignment_2/tree/master/src/uet/oop/bomberman)

@@ -167,7 +167,6 @@ Players will direct the character's movement in order to place bombs to killing 
 ## UML Class Diagram<a name="UML-class-diagram"></a>:clipboard:
 <!-- ![](UML_Diagrams/Control.jpeg) -->
 
-<<<<<<< HEAD
 <div>
 	<h3>1. Control</h3>
     <br />
@@ -194,7 +193,7 @@ Players will direct the character's movement in order to place bombs to killing 
 	<h3>4. GameRunner</h3>
     <br />
     <div align="center">
-        <img src="UML_Diagrams/gameRunner.png" alt="">
+        <img src="UML_Diagrams/GameRunner.png" alt="">
     </div>
     <br />
 	<div align="center">------------------------------------</div>
@@ -213,8 +212,7 @@ Players will direct the character's movement in order to place bombs to killing 
     <br />
     <div align="center">------------------------------------</div>
 </div>
-=======
->>>>>>> 8fd6d25f155f828e4d8fdef22ffdc6e71fdd6463
+
 <br />
 
 <!-- FEATURES -->

@@ -2,6 +2,10 @@ package Features;
 
 import javax.sound.sampled.*;
 import javax.swing.*;
+
+import Entity.animal.Animal;
+import Entity.animal.Bomber;
+
 import java.io.IOException;
 import java.net.URL;
 
@@ -38,11 +42,17 @@ public class SoundManager extends JFrame{
                 just_died.open(audio_input);
                 just_died.start();
             }
+            if (sound.equals("put_bombs")) {
+                just_died = AudioSystem.getClip();
+                just_died.open(audio_input);
+                just_died.start();
+            }
             if (sound.equals("default")) {
                 Clip clip = AudioSystem.getClip();
                 clip.open(audio_input);
                 clip.start();
             }
+            
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
             e.printStackTrace();
         }

@@ -26,13 +26,21 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-<details>
+# Table of contents :round_pushpin:
+1. [Introduction](#Introduction)
+2. [Game](#Game)
+3. [UML-class-diagram](#UML-class-diagram)
+4. [Features](#Features)
+5. [Challenges](#Challenges)
+6. [Acknowledgments](#Acknowledgments)
+7. [References](#References)
+<!-- <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#introduction">Introduction</a>
+      <a href="#Introduction">Introduction</a>
       <ul>
-        <li><a href="#team-members">Team Members</a></li>
+        <li><a href="#Team-members">Team Members</a></li>
 	<li><a href="#installation">Installation</a></li>
 	<li><a href="#motivation">Motivation</a></li>
 	<li><a href="#task-allocation">Task Allocation</a></li>      
@@ -43,14 +51,13 @@
     <li><a href="#features">Features</a></li>
     <li><a href="#challenges">Challenges</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#references">References</a></li>
   </ol>
-</details>
+</details> -->
 
 <!-- ABOUT THE PROJECT -->
 
-## Introduction :bricks:
+## Introduction <a name="Introduction"></a> :bricks:
 
 <div align="center">
 <img src="screenshots/Intro.gif" alt="">
@@ -100,10 +107,12 @@ As a fresher developer, we assume that the Bomberman game is one the most simple
 | 3     | Entities, PowerPoint                    | Cong Bang |      25      |
 | 4     | Graphics, PowerPoint, Github Management | Nhat Huy  |      25      |
 
+
+<!-- Game -->
 <br />
 
-## Technologies :globe_with_meridians:
-
+## Game <a name="Game"></a>:joystick:
+### Technologies :globe_with_meridians:
 
 - Language: [JAVA](https://www.java.com/en/)
 - Framework: [IntelliJ](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com)
@@ -155,26 +164,26 @@ Players will direct the character's movement in order to place bombs to killing 
 
 <br />
 
-## UML Class Diagram:clipboard:
+## UML Class Diagram<a name="UML-class-diagram"></a>:clipboard:
 <!-- ![](UML_Diagrams/Control.jpeg) -->
 
 <br />
 
 <!-- FEATURES -->
-## Features :triangular_flag_on_post:
+## Features<a name="Features"> :triangular_flag_on_post:
 - Completed: UX/UI, sound of game, enhancing algorithms
 - Incompleted: Minvo, 2 players, multiple characters for choosing, …
 <br />
 
 <!-- CHALLENGES -->
-## Challenges:bangbang:
+## Challenges<a name="Challenges">:bangbang:
 
 - Task allocation for each team member
 - Using platform for communication ([Trello](https://trello.com/b/Ac0ISkzt/bomber-game-oop-project-2022))
 - Working environment (Github)
 <br />
 	
-## Acknowledgments	:brain:
+## Acknowledgments<a name="Acknowledgments">:brain:
 <div style="text-align:justify">
 We would want to express our gratitude to Tom for providing us with the chance to
 participate in this project and apply what we learned in theory into practice. This project's
@@ -187,7 +196,7 @@ we can master them better from now on :heart:
 <br />
 
 
-## References  :eye::tongue::eye:
+## References<a name="References">  :eye::tongue::eye:
 1. [phuctd99](https://github.com/phuctd99/bom)
 2. [carlosflorencio](https://github.com/carlosflorencio/bomberman/blob/master/.project)
 3. [minhnq410](https://github.com/minhnq410/Bomberman_Assignment_2/tree/master/src/uet/oop/bomberman)

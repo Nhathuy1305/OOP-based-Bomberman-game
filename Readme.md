@@ -95,7 +95,7 @@ This is our game project for our final lab in our Object-Oriented Programming co
 ### Motivation :mechanical_arm:
 
 <div style="text-align:justify">
-As a fresher developer, we assume that the Bomberman game is one the most simple game which helps us in practicing coding with OOP also some significant aspects of the front-end such as: How to render the game? , How frame working in UX/UI? , ….
+As a fresher developer, we assume that the Bomberman game is one of the most simple game which helps us in practicing coding with OOP also some significant aspects of the front-end such as: How to render the game? , How frame working in UX/UI? , ….
 </div>
 
 ### Task Allocation :ok_man:

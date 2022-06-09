@@ -41,7 +41,6 @@ public class Level1 {
         Image transparent = new Image("images/transparent.png");
         author_view.setImage(transparent);
 
-        // load all enemy coordinate in level 1
         Animal enemy1 = new Ballom(4, 4, Sprite.ballom_left_1.getFxImage());
         Animal enemy2 = new Ballom(9, 9, Sprite.ballom_left_1.getFxImage());
         Animal enemy3 = new Ballom(22, 6, Sprite.ballom_left_1.getFxImage());

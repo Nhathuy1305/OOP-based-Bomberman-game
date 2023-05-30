@@ -71,10 +71,10 @@ This is our game project for our final lab in our Object-Oriented Programming co
 
 | Order |         Name          |     ID      |            Email            |                       Github account                        |                              Facebook                              |
 | :---: | :-------------------: | :---------: | :-------------------------: | :---------------------------------------------------------: | :----------------------------------------------------------------: |
-|   1   |     Pham Gia Bao      | ITITIU20166 | Phamgiabao1862001@gmail.com |           [giabao18](https://github.com/giabao18)           | [Gia Bảo](https://www.facebook.com/profile.php?id=100007374601572) |
-|   2   | Phan Nguyen Hoang Bao | ITITIU20165 | hoangbao15082002@gmail.com  | [Mr@JEY](https://github.com/PhanNguyenHoangBao-ITITIU20165) |         [Hoàng Bảo](https://www.facebook.com/kuma.jeyruei)         |
-|   3   | Nguyen Luan Cong Bang | ITITIU20163 | bangnguyen.071102@gmail.com |       [congbangitiu](https://github.com/congbangitiu)       |     [Công Bằng](https://www.facebook.com/congbang.nguyenluan)      |
-|   4   |     Dang Nhat Huy     | ITITIU20043 |    dnhuy.ityu@gmail.com     |        [Nhathuy1305](https://github.com/Nhathuy1305)        |          [Nhật Huy](https://www.facebook.com/nhhuy.135/)           |
+|   1   |     Dang Nhat Huy     | ITITIU20043 |    dnhuy.ityu@gmail.com     |        [Nhathuy1305](https://github.com/Nhathuy1305)        |          [Nhật Huy](https://www.facebook.com/nhhuy.135/)           |
+|   2   |     Pham Gia Bao      | ITITIU20166 | Phamgiabao1862001@gmail.com |           [giabao18](https://github.com/giabao18)           | [Gia Bảo](https://www.facebook.com/profile.php?id=100007374601572) |
+|   3   | Phan Nguyen Hoang Bao | ITITIU20165 | hoangbao15082002@gmail.com  | [Mr@JEY](https://github.com/PhanNguyenHoangBao-ITITIU20165) |         [Hoàng Bảo](https://www.facebook.com/kuma.jeyruei)         |
+|   4   | Nguyen Luan Cong Bang | ITITIU20163 | bangnguyen.071102@gmail.com |       [congbangitiu](https://github.com/congbangitiu)       |     [Công Bằng](https://www.facebook.com/congbang.nguyenluan)      |
 
 ### Installation :dart: 
 
@@ -102,10 +102,11 @@ As a fresher developer, we assume that the Bomberman game is one of the most sim
 
 | Order | Task                                    |  Person   | Contribution |
 | :---- | :-------------------------------------- | :-------: | :----------: |
-| 1     | Level, Utility, Readme                  |  Gia Bao  |      25      |
-| 2     | Control, Ui                             | Hoang Bao |      25      |
-| 3     | Entities, PowerPoint                    | Cong Bang |      25      |
-| 4     | Graphics, PowerPoint, Github Management | Nhat Huy  |      25      |
+| 1     | Graphics, Bot , Github Management | Nhat Huy  |      25      |
+| 2     | Level, Utility                 |  Gia Bao  |      25      |
+| 3     | Control, Ui                             | Hoang Bao |      25      |
+| 4     | Entities, PowerPoint                    | Cong Bang |      25      |
+
 
 
 <!-- Game -->

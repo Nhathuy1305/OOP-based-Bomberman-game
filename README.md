@@ -69,12 +69,12 @@ This is our game project for our final lab in our Object-Oriented Programming co
 
 ### Team Members :couplekiss_man_man:
 
-| Order |         Name          |     ID      |            Email            |                       Github account                        |                              Facebook                              |
-| :---: | :-------------------: | :---------: | :-------------------------: | :---------------------------------------------------------: | :----------------------------------------------------------------: |
-|   1   |     Dang Nhat Huy     | ITITIU20043 |    dnhuy.ityu@gmail.com     |        [Nhathuy1305](https://github.com/Nhathuy1305)        |          [Nhật Huy](https://www.facebook.com/nhhuy.135/)           |
-|   2   |     Pham Gia Bao      | ITITIU20166 | Phamgiabao1862001@gmail.com |           [giabao18](https://github.com/giabao18)           | [Gia Bảo](https://www.facebook.com/profile.php?id=100007374601572) |
-|   3   | Phan Nguyen Hoang Bao | ITITIU20165 | hoangbao15082002@gmail.com  | [Mr@JEY](https://github.com/PhanNguyenHoangBao-ITITIU20165) |         [Hoàng Bảo](https://www.facebook.com/kuma.jeyruei)         |
-|   4   | Nguyen Luan Cong Bang | ITITIU20163 | bangnguyen.071102@gmail.com |       [congbangitiu](https://github.com/congbangitiu)       |     [Công Bằng](https://www.facebook.com/congbang.nguyenluan)      |
+| Order |         Name          |     ID      |            Email            |                       Github account                        |
+| :---: | :-------------------: | :---------: | :-------------------------: | :---------------------------------------------------------: |
+|   1   |     Dang Nhat Huy     | ITITIU20043 |    dnhuy.ityu@gmail.com     |        [Nhathuy1305](https://github.com/Nhathuy1305)        |
+|   2   |     Pham Gia Bao      | ITITIU20166 | Phamgiabao1862001@gmail.com |           [giabao18](https://github.com/giabao18)           |
+|   3   | Phan Nguyen Hoang Bao | ITITIU20165 | hoangbao15082002@gmail.com  | [Mr@JEY](https://github.com/PhanNguyenHoangBao-ITITIU20165) |
+|   4   | Nguyen Luan Cong Bang | ITITIU20163 | bangnguyen.071102@gmail.com |       [congbangitiu](https://github.com/congbangitiu)       |
 
 ### Installation :dart: 
 
